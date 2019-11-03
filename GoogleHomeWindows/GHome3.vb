@@ -61,14 +61,12 @@
 
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-       
-        Dim part1 As String = "py -m google-oauthlib-tool --client-secrets C:\GoogleAssistant\"
-        Dim part2 As String = TextBox1.Text
-        Dim part3 As String = " --scope https://www.googleapis.com/auth/assistant-sdk-prototype --save --headless"
 
-        Dim fulladress As String = part1 + part2 + part3
 
-        Process.Start("cmd", "/K" & fulladress)
+
+        'Dim fulladress As String = part1 + part2 + part3
+
+      '  Process.Start("cmd", "/K" & fulladress)
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
@@ -77,5 +75,11 @@
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         Process.Start("CMD")
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+        Dim partie1 As String = ("google-oauthlib-tool --client-secrets " & Chr(34) & "C:\GoogleAssistant\")
+        Dim partie2 As String = (TextBox1.Text & chr(34))
+        Dim partie3 As String = (" --scope https://www.googleapis.com/auth/assistant-sdk-prototype --save --headless")
     End Sub
 End Class

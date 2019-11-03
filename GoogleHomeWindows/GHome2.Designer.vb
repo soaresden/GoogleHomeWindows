@@ -126,10 +126,10 @@ Partial Class GHome2
         '
         Me.PictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(21, 251)
+        Me.PictureBox3.Location = New System.Drawing.Point(-4, 246)
         Me.PictureBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(341, 350)
+        Me.PictureBox3.Size = New System.Drawing.Size(396, 439)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 21
         Me.PictureBox3.TabStop = False
@@ -148,7 +148,7 @@ Partial Class GHome2
         '
         Me.PictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(109, 607)
+        Me.PictureBox4.Location = New System.Drawing.Point(280, 617)
         Me.PictureBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(237, 68)
@@ -158,7 +158,7 @@ Partial Class GHome2
         '
         'RichTextBox3
         '
-        Me.RichTextBox3.Location = New System.Drawing.Point(21, 625)
+        Me.RichTextBox3.Location = New System.Drawing.Point(160, 638)
         Me.RichTextBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.RichTextBox3.Name = "RichTextBox3"
         Me.RichTextBox3.ReadOnly = True
@@ -168,19 +168,19 @@ Partial Class GHome2
         '
         'RichTextBox4
         '
-        Me.RichTextBox4.Location = New System.Drawing.Point(523, 193)
+        Me.RichTextBox4.Location = New System.Drawing.Point(523, 172)
         Me.RichTextBox4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.RichTextBox4.Name = "RichTextBox4"
         Me.RichTextBox4.ReadOnly = True
-        Me.RichTextBox4.Size = New System.Drawing.Size(211, 27)
+        Me.RichTextBox4.Size = New System.Drawing.Size(265, 48)
         Me.RichTextBox4.TabIndex = 25
-        Me.RichTextBox4.Text = "4) Type again the ProjectName"
+        Me.RichTextBox4.Text = "4) Type again the ProjectName" & Global.Microsoft.VisualBasic.ChrW(10) & "Save at the bottom of the page"
         '
         'PictureBox5
         '
         Me.PictureBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox5.Image = CType(resources.GetObject("PictureBox5.Image"), System.Drawing.Image)
-        Me.PictureBox5.Location = New System.Drawing.Point(523, 210)
+        Me.PictureBox5.Location = New System.Drawing.Point(516, 222)
         Me.PictureBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox5.Name = "PictureBox5"
         Me.PictureBox5.Size = New System.Drawing.Size(278, 94)
@@ -190,7 +190,7 @@ Partial Class GHome2
         '
         'RichTextBox5
         '
-        Me.RichTextBox5.Location = New System.Drawing.Point(544, 262)
+        Me.RichTextBox5.Location = New System.Drawing.Point(543, 274)
         Me.RichTextBox5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.RichTextBox5.Name = "RichTextBox5"
         Me.RichTextBox5.ReadOnly = True
@@ -202,7 +202,7 @@ Partial Class GHome2
         '
         Me.PictureBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(380, 327)
+        Me.PictureBox6.Location = New System.Drawing.Point(392, 327)
         Me.PictureBox6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox6.Name = "PictureBox6"
         Me.PictureBox6.Size = New System.Drawing.Size(278, 256)
@@ -212,7 +212,7 @@ Partial Class GHome2
         '
         'RichTextBox6
         '
-        Me.RichTextBox6.Location = New System.Drawing.Point(380, 315)
+        Me.RichTextBox6.Location = New System.Drawing.Point(393, 315)
         Me.RichTextBox6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.RichTextBox6.Name = "RichTextBox6"
         Me.RichTextBox6.ReadOnly = True
@@ -234,11 +234,11 @@ Partial Class GHome2
         '
         'RichTextBox7
         '
-        Me.RichTextBox7.Location = New System.Drawing.Point(664, 497)
+        Me.RichTextBox7.Location = New System.Drawing.Point(664, 478)
         Me.RichTextBox7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.RichTextBox7.Name = "RichTextBox7"
         Me.RichTextBox7.ReadOnly = True
-        Me.RichTextBox7.Size = New System.Drawing.Size(136, 55)
+        Me.RichTextBox7.Size = New System.Drawing.Size(136, 74)
         Me.RichTextBox7.TabIndex = 31
         Me.RichTextBox7.Text = "6) Repeat the same options as 2) and then " & Global.Microsoft.VisualBasic.ChrW(10) & "Type :"
         '

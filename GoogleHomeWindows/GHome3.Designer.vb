@@ -39,6 +39,7 @@ Partial Class GHome3
         Me.RichTextBox4 = New System.Windows.Forms.RichTextBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -94,7 +95,7 @@ Partial Class GHome3
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(12, 180)
+        Me.PictureBox2.Location = New System.Drawing.Point(12, 224)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(282, 125)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -105,9 +106,10 @@ Partial Class GHome3
         '
         Me.RichTextBox1.Location = New System.Drawing.Point(12, 131)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(282, 43)
+        Me.RichTextBox1.Size = New System.Drawing.Size(282, 79)
         Me.RichTextBox1.TabIndex = 19
-        Me.RichTextBox1.Text = "1) Confirm the Creation and Download your Json in the menu"
+        Me.RichTextBox1.Text = "1) Confirm and don't download the json directly" & Global.Microsoft.VisualBasic.ChrW(10) & "Go back to the dashboard and down" &
+    "load from here (as screen below)"
         '
         'RichTextBox2
         '
@@ -144,6 +146,7 @@ Partial Class GHome3
         Me.Button1.Size = New System.Drawing.Size(179, 46)
         Me.Button1.TabIndex = 24
         Me.Button1.Text = "3°) Google Assistant SDK"
+        Me.Button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
@@ -153,6 +156,7 @@ Partial Class GHome3
         Me.Button2.Size = New System.Drawing.Size(215, 46)
         Me.Button2.TabIndex = 25
         Me.Button2.Text = "4°) Google Authentification"
+        Me.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
@@ -162,6 +166,7 @@ Partial Class GHome3
         Me.Button3.Size = New System.Drawing.Size(215, 43)
         Me.Button3.TabIndex = 26
         Me.Button3.Text = "6°) Generate a Token"
+        Me.Button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button3.UseVisualStyleBackColor = True
         '
         'PictureBox3
@@ -176,7 +181,7 @@ Partial Class GHome3
         '
         'RichTextBox4
         '
-        Me.RichTextBox4.Location = New System.Drawing.Point(592, 238)
+        Me.RichTextBox4.Location = New System.Drawing.Point(592, 231)
         Me.RichTextBox4.Name = "RichTextBox4"
         Me.RichTextBox4.Size = New System.Drawing.Size(450, 77)
         Me.RichTextBox4.TabIndex = 28
@@ -189,6 +194,7 @@ Partial Class GHome3
         Me.Button4.Size = New System.Drawing.Size(179, 40)
         Me.Button4.TabIndex = 29
         Me.Button4.Text = "5°) Upgrade Pip Install"
+        Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
@@ -200,12 +206,20 @@ Partial Class GHome3
         Me.Button5.Text = "Open a Cmd"
         Me.Button5.UseVisualStyleBackColor = True
         '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(304, 313)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(738, 22)
+        Me.TextBox2.TabIndex = 31
+        '
         'GHome3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1054, 450)
+        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.RichTextBox4)
@@ -248,4 +262,5 @@ Partial Class GHome3
     Friend WithEvents RichTextBox4 As RichTextBox
     Friend WithEvents Button4 As Button
     Friend WithEvents Button5 As Button
+    Friend WithEvents TextBox2 As TextBox
 End Class

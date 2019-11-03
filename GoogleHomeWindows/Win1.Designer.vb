@@ -135,7 +135,7 @@ Partial Class Win1
         Me.RichTextBox2.Location = New System.Drawing.Point(12, 348)
         Me.RichTextBox2.Name = "RichTextBox2"
         Me.RichTextBox2.ReadOnly = True
-        Me.RichTextBox2.Size = New System.Drawing.Size(738, 28)
+        Me.RichTextBox2.Size = New System.Drawing.Size(738, 52)
         Me.RichTextBox2.TabIndex = 24
         Me.RichTextBox2.Text = "python -m googlesamples.assistant.grpc.textinput --device-model-id YOURDEVICENAME" &
     " --device-id YOURDEVICENAME"
