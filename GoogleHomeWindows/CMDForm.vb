@@ -127,12 +127,7 @@ Public Class CMDForm
         End If
 
         'Play the sound File
-        Dim Player As WindowsMediaPlayer = New WindowsMediaPlayer
-        Dim urls() As String = {"C:\GoogleAssistant\okgooglesnd.mp3"} ' create the playlist
-        For Each u In urls
-            Player.URL = u
-            Player.controls.play()
-        Next
+        My.Computer.Audio.Play(My.Resources.okgooglesnd, AudioPlayMode.Background)
 
         'Launch the Vocal Code
         Dim OriginalVocalCode As String = "py -m googlesamples.assistant.grpc.pushtotalk --device-model-id VIRTUALDEVICE --project-id PROJECTNAME"

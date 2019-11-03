@@ -69,5 +69,24 @@ Namespace My.Resources
                 Return CType(obj,System.Drawing.Icon)
             End Get
         End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.IO.UnmanagedMemoryStream semblable à System.IO.MemoryStream.
+        '''</summary>
+        Friend ReadOnly Property okgooglesnd() As System.IO.UnmanagedMemoryStream
+            Get
+                Return ResourceManager.GetStream("okgooglesnd", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+        '''</summary>
+        Friend ReadOnly Property smartplug() As System.Drawing.Icon
+            Get
+                Dim obj As Object = ResourceManager.GetObject("smartplug", resourceCulture)
+                Return CType(obj,System.Drawing.Icon)
+            End Get
+        End Property
     End Module
 End Namespace

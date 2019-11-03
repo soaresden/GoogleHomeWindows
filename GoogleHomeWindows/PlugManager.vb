@@ -5,7 +5,7 @@
     Private Sub InputMinutes_TextChanged(sender As Object, e As EventArgs) Handles InputMinutes.TextChanged
         On Error Resume Next
         'Configuring Time
-        Dim thismoment As TimeSpan = TimeSpan.Parse(Format(Now, "hh:mm:ss"))
+        Dim thismoment As TimeSpan = TimeSpan.Parse(Format(Now, "HH:mm:ss"))
         Dim nextmoment As TimeSpan = TimeSpan.Parse(InputMinutes.Text).Add(thismoment)
 
         LastCheck.Text = thismoment.ToString
@@ -14,20 +14,15 @@
     End Sub
 
     Private Sub ExecuteButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExecuteButton.Click
-        'Check if smartdevicename is empty
+        'If first run then exit this sub
+        If InitPython.Text = 0 Then
+            GoTo Fin
+        End If
 
+        'Check if smartdevicename is empty
         If SmartDeviceName.Text = "" Then
             MsgBox("Please Input your Device Name")
             Exit Sub
-        End If
-
-        'If it's the first time, just run the Python Init
-        If InitPython.Text = 0 Then
-            MyProcess.StandardInput.WriteLine(InputTextBox.Text)
-            MyProcess.StandardInput.Flush()
-            InputTextBox.Text = ""
-            InitPython.Text = 1
-            GoTo Fin
         End If
 
         'Conditionnally chosing what to do 
@@ -48,7 +43,7 @@
 
 
         'Configuring time 
-        Dim thismoment As TimeSpan = TimeSpan.Parse(Format(Now, "hh:mm:ss"))
+        Dim thismoment As TimeSpan = TimeSpan.Parse(Format(Now, "HH:mm:ss"))
         Dim nextmoment As TimeSpan = TimeSpan.Parse(InputMinutes.Text).Add(thismoment)
 
         LastCheck.Text = thismoment.ToString
@@ -81,27 +76,8 @@ Fin:
         Charging.Text = statuschargeur
         BatteryLevel.Text = pourcentagebatterie
 
-        'Import the device name
-        'Read the first line (line 0) of the config file
-        Dim ligneacopier As String = System.IO.File.ReadAllLines("c:\GoogleAssistant\config.txt")(1)
-
-        'isolate the value
-        Dim LineParts() As String = Strings.Split(ligneacopier, "=", 2)
-        Dim Value As String = LineParts(1)
-        DeviceName.Text = Value
-
-        'Initialize Python
-        Dim basecommand As String = ("python -m googlesamples.assistant.grpc.textinput --device-model-id DEVICENAME --device-id DEVICENAME")
-        Dim fullcommand As String = Replace(basecommand, "DEVICENAME", DeviceName.Text)
-        Dim initializepython As Boolean = 1
-        Dim Textavant As String = InputTextBox.Text
-        InputTextBox.Text = fullcommand
-        MyProcess.StandardInput.WriteLine(fullcommand)
-        InputTextBox.Text = ""
-        System.Threading.Thread.Sleep(3000)
-
         'Configuring Time
-        Dim thismoment As TimeSpan = TimeSpan.Parse(Format(Now, "hh:mm:ss"))
+        Dim thismoment As TimeSpan = TimeSpan.Parse(Format(Now, "HH:mm:ss"))
         Dim nextmoment As TimeSpan = TimeSpan.Parse(InputMinutes.Text).Add(thismoment)
 
         LastCheck.Text = thismoment.ToString
@@ -114,14 +90,43 @@ Fin:
         SmartDeviceName.Focus()
 
     End Sub
+    Private Sub NotifyIcon1_DoubleClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles NotifyIcon1.DoubleClick
+        'Me.Show()
+        ShowInTaskbar = True
+        Me.WindowState = FormWindowState.Normal
+        NotifyIcon1.Visible = False
+    End Sub
+
+    Private Sub CMDForm_Resize(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Resize
+        If Me.WindowState = FormWindowState.Minimized Then
+            NotifyIcon1.Visible = True
+            NotifyIcon1.Icon = My.Resources.smartplug
+            NotifyIcon1.BalloonTipIcon = ToolTipIcon.Info
+            NotifyIcon1.BalloonTipTitle = "GoogleHome SmartPlug"
+            NotifyIcon1.BalloonTipText = "Is still Running in TrayIcon"
+            NotifyIcon1.ShowBalloonTip(30000)
+            'Me.Hide()
+            ShowInTaskbar = False
+        End If
+    End Sub
+
 
     Sub Timer1_Tick(sender As System.Object, e As System.EventArgs) Handles Timer1.Tick
         ExecuteButton.PerformClick()
-
     End Sub
 
 
     Private Sub PlugManager_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        'Importing the DeviceName
+        'Read the first line (line 1) of the config file
+        Dim ligneacopier As String = System.IO.File.ReadAllLines("c:\GoogleAssistant\config.txt")(1)
+        'isolate the value
+        Dim LineParts() As String = Strings.Split(ligneacopier, "=", 2)
+        Dim Value As String = LineParts(1)
+
+        DeviceName.Text = Value
+
+        'CMD
         Me.AcceptButton = ExecuteButton
         MyProcess = New Process
         With MyProcess.StartInfo
@@ -138,7 +143,6 @@ Fin:
         MyProcess.BeginOutputReadLine()
         AppendOutputText("Process Started at: " & MyProcess.StartTime.ToString)
     End Sub
-
     Private Sub Form1_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles Me.FormClosing
         'Secure disable the time 
         Timer1.Enabled = False
@@ -149,17 +153,12 @@ Fin:
         MyProcess.Kill()
         MyProcess.Close()
     End Sub
-
     Private Sub MyProcess_ErrorDataReceived(ByVal sender As Object, ByVal e As System.Diagnostics.DataReceivedEventArgs) Handles MyProcess.ErrorDataReceived
         AppendOutputText(vbCrLf & "Error: " & e.Data)
     End Sub
-
     Private Sub MyProcess_OutputDataReceived(ByVal sender As Object, ByVal e As System.Diagnostics.DataReceivedEventArgs) Handles MyProcess.OutputDataReceived
         AppendOutputText(vbCrLf & e.Data)
     End Sub
-
-
-
     Private Sub AppendOutputText(ByVal text As String)
         On Error Resume Next
         If OutputTextBox.InvokeRequired Then
@@ -171,7 +170,24 @@ Fin:
         On Error GoTo 0
     End Sub
 
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        'Check if smartdevicename is empty
+        If SmartDeviceName.Text = "" Then
+            MsgBox("Please Input your Device Name")
+            Exit Sub
+        End If
 
+        'Increment the value
+        InitPython.Text = Val(InitPython.Text) + 1
 
-
+        'Initialize Python
+        Dim basecommand As String = ("python -m googlesamples.assistant.grpc.textinput --device-model-id DEVICENAME --device-id DEVICENAME")
+        Dim fullcommand As String = Replace(basecommand, "DEVICENAME", DeviceName.Text)
+        InputTextBox.Text = fullcommand
+        MyProcess.StandardInput.WriteLine(InputTextBox.Text)
+        MyProcess.StandardInput.Flush()
+        InputTextBox.Text = ""
+        InitPython.Text = 1
+        System.Threading.Thread.Sleep(3000)
+    End Sub
 End Class

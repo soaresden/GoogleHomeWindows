@@ -18,4 +18,7 @@
         RichTextBox5.Text = Value
     End Sub
 
+    Private Sub GHome2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
