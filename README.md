@@ -6,3 +6,8 @@ A GUI to control Python Google Assistant
 * Added GoogleHome Voice
 * Added GoogleHome Text
 * Added a SmartManagerAssistant to Control SmartPlugs
+
+
+First Release the 2019-november-03 : https://github.com/soaresden/GoogleHomeWindows/releases
+
+ps: this is my first REAL project on vb net. Feel free to work and improve it
