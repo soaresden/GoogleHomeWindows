@@ -95,7 +95,7 @@ Partial Class PlugManager
         'DeviceName
         '
         Me.DeviceName.Location = New System.Drawing.Point(468, 85)
-        Me.DeviceName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DeviceName.Margin = New System.Windows.Forms.Padding(4)
         Me.DeviceName.Name = "DeviceName"
         Me.DeviceName.ReadOnly = True
         Me.DeviceName.Size = New System.Drawing.Size(132, 22)
@@ -131,7 +131,7 @@ Partial Class PlugManager
         Me.OutputTextBox.BackColor = System.Drawing.Color.Black
         Me.OutputTextBox.ForeColor = System.Drawing.Color.Lime
         Me.OutputTextBox.Location = New System.Drawing.Point(401, 140)
-        Me.OutputTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.OutputTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.OutputTextBox.Multiline = True
         Me.OutputTextBox.Name = "OutputTextBox"
         Me.OutputTextBox.ReadOnly = True
@@ -144,25 +144,25 @@ Partial Class PlugManager
         Me.InputTextBox.BackColor = System.Drawing.Color.Black
         Me.InputTextBox.ForeColor = System.Drawing.Color.Lime
         Me.InputTextBox.Location = New System.Drawing.Point(401, 420)
-        Me.InputTextBox.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.InputTextBox.Margin = New System.Windows.Forms.Padding(4)
         Me.InputTextBox.Name = "InputTextBox"
         Me.InputTextBox.Size = New System.Drawing.Size(361, 22)
         Me.InputTextBox.TabIndex = 1
         '
         'ExecuteButton
         '
-        Me.ExecuteButton.Location = New System.Drawing.Point(289, 178)
-        Me.ExecuteButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ExecuteButton.Location = New System.Drawing.Point(277, 199)
+        Me.ExecuteButton.Margin = New System.Windows.Forms.Padding(4)
         Me.ExecuteButton.Name = "ExecuteButton"
-        Me.ExecuteButton.Size = New System.Drawing.Size(83, 64)
+        Me.ExecuteButton.Size = New System.Drawing.Size(105, 64)
         Me.ExecuteButton.TabIndex = 20
-        Me.ExecuteButton.Text = "Confirm Options"
+        Me.ExecuteButton.Text = "Confirm Settings"
         Me.ExecuteButton.UseVisualStyleBackColor = True
         '
         'SmartDeviceName
         '
         Me.SmartDeviceName.Location = New System.Drawing.Point(96, 245)
-        Me.SmartDeviceName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SmartDeviceName.Margin = New System.Windows.Forms.Padding(4)
         Me.SmartDeviceName.Name = "SmartDeviceName"
         Me.SmartDeviceName.Size = New System.Drawing.Size(132, 22)
         Me.SmartDeviceName.TabIndex = 0
@@ -181,7 +181,7 @@ Partial Class PlugManager
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
         Me.PictureBox2.Location = New System.Drawing.Point(68, 127)
-        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(184, 162)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -209,9 +209,9 @@ Partial Class PlugManager
         Me.GroupBox2.Controls.Add(Me.InputMinutes)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Location = New System.Drawing.Point(3, 297)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox2.Size = New System.Drawing.Size(183, 151)
         Me.GroupBox2.TabIndex = 25
         Me.GroupBox2.TabStop = False
@@ -220,7 +220,7 @@ Partial Class PlugManager
         'NextCheck
         '
         Me.NextCheck.Location = New System.Drawing.Point(100, 106)
-        Me.NextCheck.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.NextCheck.Margin = New System.Windows.Forms.Padding(4)
         Me.NextCheck.Name = "NextCheck"
         Me.NextCheck.ReadOnly = True
         Me.NextCheck.Size = New System.Drawing.Size(75, 22)
@@ -249,7 +249,7 @@ Partial Class PlugManager
         'LastCheck
         '
         Me.LastCheck.Location = New System.Drawing.Point(100, 79)
-        Me.LastCheck.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.LastCheck.Margin = New System.Windows.Forms.Padding(4)
         Me.LastCheck.Name = "LastCheck"
         Me.LastCheck.ReadOnly = True
         Me.LastCheck.Size = New System.Drawing.Size(75, 22)
@@ -268,7 +268,7 @@ Partial Class PlugManager
         'InputMinutes
         '
         Me.InputMinutes.Location = New System.Drawing.Point(12, 47)
-        Me.InputMinutes.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.InputMinutes.Margin = New System.Windows.Forms.Padding(4)
         Me.InputMinutes.Name = "InputMinutes"
         Me.InputMinutes.Size = New System.Drawing.Size(79, 22)
         Me.InputMinutes.TabIndex = 2
@@ -288,7 +288,7 @@ Partial Class PlugManager
         'BatteryLevel
         '
         Me.BatteryLevel.Location = New System.Drawing.Point(104, 44)
-        Me.BatteryLevel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.BatteryLevel.Margin = New System.Windows.Forms.Padding(4)
         Me.BatteryLevel.Name = "BatteryLevel"
         Me.BatteryLevel.ReadOnly = True
         Me.BatteryLevel.Size = New System.Drawing.Size(81, 22)
@@ -298,7 +298,7 @@ Partial Class PlugManager
         'LowLevel
         '
         Me.LowLevel.Location = New System.Drawing.Point(63, 98)
-        Me.LowLevel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.LowLevel.Margin = New System.Windows.Forms.Padding(4)
         Me.LowLevel.Name = "LowLevel"
         Me.LowLevel.Size = New System.Drawing.Size(33, 22)
         Me.LowLevel.TabIndex = 3
@@ -308,7 +308,7 @@ Partial Class PlugManager
         'HighLevel
         '
         Me.HighLevel.Location = New System.Drawing.Point(109, 98)
-        Me.HighLevel.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.HighLevel.Margin = New System.Windows.Forms.Padding(4)
         Me.HighLevel.Name = "HighLevel"
         Me.HighLevel.Size = New System.Drawing.Size(33, 22)
         Me.HighLevel.TabIndex = 4
@@ -345,9 +345,9 @@ Partial Class PlugManager
         Me.GroupBox3.Controls.Add(Me.BatteryLevel)
         Me.GroupBox3.Controls.Add(Me.Label7)
         Me.GroupBox3.Location = New System.Drawing.Point(187, 297)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(4)
         Me.GroupBox3.Size = New System.Drawing.Size(195, 151)
         Me.GroupBox3.TabIndex = 26
         Me.GroupBox3.TabStop = False
@@ -409,7 +409,7 @@ Partial Class PlugManager
         'Charging
         '
         Me.Charging.Location = New System.Drawing.Point(104, 17)
-        Me.Charging.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Charging.Margin = New System.Windows.Forms.Padding(4)
         Me.Charging.Name = "Charging"
         Me.Charging.ReadOnly = True
         Me.Charging.Size = New System.Drawing.Size(81, 22)
@@ -441,11 +441,11 @@ Partial Class PlugManager
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(289, 245)
+        Me.Button1.Location = New System.Drawing.Point(277, 160)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(105, 35)
         Me.Button1.TabIndex = 28
-        Me.Button1.Text = "Button1"
+        Me.Button1.Text = "Init Python"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'PlugManager
