@@ -14,6 +14,7 @@ Public Class GHome1
 
         afile.WriteLine(line1)
         afile.Close()
+        MsgBox("Project Name Registered in Config File")
     End Sub
 
     Private Sub RichTextBox1_MouseClick(sender As Object, e As MouseEventArgs) Handles RichTextBox1.MouseClick

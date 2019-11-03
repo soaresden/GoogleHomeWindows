@@ -31,6 +31,7 @@ Partial Class Python0
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -49,6 +50,7 @@ Partial Class Python0
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(194, 12)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(0)
@@ -84,7 +86,9 @@ Partial Class Python0
         Me.RichTextBox1.Name = "RichTextBox1"
         Me.RichTextBox1.Size = New System.Drawing.Size(469, 123)
         Me.RichTextBox1.TabIndex = 19
-        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
+        Me.RichTextBox1.Text = "1) Please download Python" & Global.Microsoft.VisualBasic.ChrW(10) & "https://www.python.org/downloads/release/python-373/" & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10) & "2" &
+    ") ENABLE the PATH value BEFORE installing" & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10) & "3) Execute a ""cmd"" process and type """ &
+    "py"" to see if it's installed correctly"
         '
         'CheckBox1
         '
@@ -114,6 +118,18 @@ Partial Class Python0
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 23
         Me.PictureBox2.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label3.Font = New System.Drawing.Font("Roboto Cn", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Yellow
+        Me.Label3.Location = New System.Drawing.Point(10, 92)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(305, 18)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "Installing Python to control Google Home on your PC"
         '
         'Python0
         '
@@ -147,4 +163,5 @@ Partial Class Python0
     Friend WithEvents CheckBox1 As CheckBox
     Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents Label3 As Label
 End Class

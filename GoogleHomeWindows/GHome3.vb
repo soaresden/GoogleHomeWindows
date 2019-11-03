@@ -56,16 +56,26 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Process.Start("cmd", "/k py py -m pip install --upgrade google-auth-oauthlib[tool]")
+        Process.Start("cmd", "/k py -m pip install --upgrade google-auth-oauthlib[tool]")
     End Sub
 
+
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-        Dim part1 As String = "google-oauthlib-tool --client-secrets C:\GoogleAssistant\"
+       
+        Dim part1 As String = "py -m google-oauthlib-tool --client-secrets C:\GoogleAssistant\"
         Dim part2 As String = TextBox1.Text
         Dim part3 As String = " --scope https://www.googleapis.com/auth/assistant-sdk-prototype --save --headless"
 
         Dim fulladress As String = part1 + part2 + part3
 
         Process.Start("cmd", "/K" & fulladress)
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Process.Start("cmd", "/K py -m pip install --upgrade pip")
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Process.Start("CMD")
     End Sub
 End Class

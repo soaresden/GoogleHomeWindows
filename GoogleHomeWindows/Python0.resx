@@ -1275,14 +1275,6 @@
         HQAAAAAAAACABFG8AwAAAAAAAACQGOf+f3APuReqOVmaAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="RichTextBox1.Text" xml:space="preserve">
-    <value>1) Please download Python
-https://www.python.org/downloads/release/python-373/
-
-2) Install it and don't forget to ENABLE the PATH value
-
-3) Execute a "cmd" process and type "Python" to see if it's installed correctly</value>
-  </data>
   <metadata name="CheckBox1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>

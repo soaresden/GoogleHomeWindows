@@ -37,6 +37,8 @@ Partial Class GHome3
         Me.Button3 = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.RichTextBox4 = New System.Windows.Forms.RichTextBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -155,11 +157,11 @@ Partial Class GHome3
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(592, 186)
+        Me.Button3.Location = New System.Drawing.Point(777, 183)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(179, 46)
+        Me.Button3.Size = New System.Drawing.Size(215, 43)
         Me.Button3.TabIndex = 26
-        Me.Button3.Text = "5°) Generate a Token"
+        Me.Button3.Text = "6°) Generate a Token"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'PictureBox3
@@ -180,12 +182,32 @@ Partial Class GHome3
         Me.RichTextBox4.TabIndex = 28
         Me.RichTextBox4.Text = resources.GetString("RichTextBox4.Text")
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(592, 186)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(179, 40)
+        Me.Button4.TabIndex = 29
+        Me.Button4.Text = "5°) Upgrade Pip Install"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(163, 359)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(131, 63)
+        Me.Button5.TabIndex = 30
+        Me.Button5.Text = "Open a Cmd"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
         'GHome3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1054, 450)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.RichTextBox4)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Button3)
@@ -224,4 +246,6 @@ Partial Class GHome3
     Friend WithEvents Button3 As Button
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents RichTextBox4 As RichTextBox
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
 End Class

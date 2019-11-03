@@ -218,7 +218,7 @@ Partial Class GHome2
         Me.RichTextBox6.ReadOnly = True
         Me.RichTextBox6.Size = New System.Drawing.Size(277, 27)
         Me.RichTextBox6.TabIndex = 29
-        Me.RichTextBox6.Text = "6) ""Help Me Choose"""
+        Me.RichTextBox6.Text = "5) ""Help Me Choose"""
         '
         'PictureBox7
         '
@@ -234,13 +234,13 @@ Partial Class GHome2
         '
         'RichTextBox7
         '
-        Me.RichTextBox7.Location = New System.Drawing.Point(680, 523)
+        Me.RichTextBox7.Location = New System.Drawing.Point(664, 497)
         Me.RichTextBox7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.RichTextBox7.Name = "RichTextBox7"
         Me.RichTextBox7.ReadOnly = True
-        Me.RichTextBox7.Size = New System.Drawing.Size(121, 27)
+        Me.RichTextBox7.Size = New System.Drawing.Size(136, 55)
         Me.RichTextBox7.TabIndex = 31
-        Me.RichTextBox7.Text = "7) Type :"
+        Me.RichTextBox7.Text = "6) Repeat the same options as 2) and then " & Global.Microsoft.VisualBasic.ChrW(10) & "Type :"
         '
         'RichTextBox8
         '
