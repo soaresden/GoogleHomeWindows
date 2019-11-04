@@ -38,6 +38,7 @@ Partial Class Welcome
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.IconHome = New System.Windows.Forms.PictureBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -175,6 +176,7 @@ Partial Class Welcome
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Location = New System.Drawing.Point(194, 10)
@@ -193,6 +195,18 @@ Partial Class Welcome
         Me.IconHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.IconHome.TabIndex = 16
         Me.IconHome.TabStop = False
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label4.Font = New System.Drawing.Font("Roboto", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.Color.White
+        Me.Label4.Location = New System.Drawing.Point(951, 55)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(120, 58)
+        Me.Label4.TabIndex = 3
+        Me.Label4.Text = "v1.3"
         '
         'Welcome
         '
@@ -240,4 +254,5 @@ Partial Class Welcome
     Friend WithEvents Label3 As Label
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents IconHome As PictureBox
+    Friend WithEvents Label4 As Label
 End Class
