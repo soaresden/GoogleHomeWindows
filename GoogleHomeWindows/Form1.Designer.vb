@@ -37,8 +37,8 @@ Partial Class Welcome
         Me.Button8 = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.IconHome = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.IconHome = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -48,9 +48,10 @@ Partial Class Welcome
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Location = New System.Drawing.Point(9, 10)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(179, 113)
+        Me.PictureBox1.Size = New System.Drawing.Size(134, 92)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -61,9 +62,10 @@ Partial Class Welcome
         Me.Label1.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label1.Font = New System.Drawing.Font("Roboto", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(3, 18)
+        Me.Label1.Location = New System.Drawing.Point(2, 15)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(791, 58)
+        Me.Label1.Size = New System.Drawing.Size(620, 46)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Welcome to Windows Google Home"
         '
@@ -73,90 +75,100 @@ Partial Class Welcome
         Me.Label2.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label2.Font = New System.Drawing.Font("Roboto Cn", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Yellow
-        Me.Label2.Location = New System.Drawing.Point(10, 76)
+        Me.Label2.Location = New System.Drawing.Point(8, 62)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(379, 18)
+        Me.Label2.Size = New System.Drawing.Size(315, 14)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Your Windows Interface for controlling your Goole Home Devices"
         '
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(12, 173)
+        Me.PictureBox2.Location = New System.Drawing.Point(9, 141)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(1255, 297)
+        Me.PictureBox2.Size = New System.Drawing.Size(941, 241)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 3
         Me.PictureBox2.TabStop = False
         '
         'Button0
         '
-        Me.Button0.Location = New System.Drawing.Point(152, 374)
+        Me.Button0.Location = New System.Drawing.Point(114, 304)
+        Me.Button0.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button0.Name = "Button0"
-        Me.Button0.Size = New System.Drawing.Size(103, 33)
+        Me.Button0.Size = New System.Drawing.Size(77, 27)
         Me.Button0.TabIndex = 4
         Me.Button0.Text = "Install Python"
         Me.Button0.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(271, 374)
+        Me.Button1.Location = New System.Drawing.Point(203, 304)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(103, 33)
+        Me.Button1.Size = New System.Drawing.Size(77, 27)
         Me.Button1.TabIndex = 5
         Me.Button1.Text = "GHome 1/3"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(396, 374)
+        Me.Button2.Location = New System.Drawing.Point(297, 304)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(103, 33)
+        Me.Button2.Size = New System.Drawing.Size(77, 27)
         Me.Button2.TabIndex = 6
         Me.Button2.Text = "GHome 2/3"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(514, 374)
+        Me.Button3.Location = New System.Drawing.Point(386, 304)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(103, 33)
+        Me.Button3.Size = New System.Drawing.Size(77, 27)
         Me.Button3.TabIndex = 7
         Me.Button3.Text = "GHome 3/3"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(645, 374)
+        Me.Button4.Location = New System.Drawing.Point(484, 304)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(103, 33)
+        Me.Button4.Size = New System.Drawing.Size(77, 27)
         Me.Button4.TabIndex = 8
         Me.Button4.Text = "Win 1/2"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(763, 374)
+        Me.Button5.Location = New System.Drawing.Point(572, 304)
+        Me.Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(103, 33)
+        Me.Button5.Size = New System.Drawing.Size(77, 27)
         Me.Button5.TabIndex = 9
         Me.Button5.Text = "Win 2/2"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(1180, 236)
+        Me.Button6.Location = New System.Drawing.Point(885, 192)
+        Me.Button6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(72, 68)
+        Me.Button6.Size = New System.Drawing.Size(54, 55)
         Me.Button6.TabIndex = 10
         Me.Button6.Text = "OK Google"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(908, 437)
+        Me.Button8.Location = New System.Drawing.Point(681, 355)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(144, 33)
+        Me.Button8.Size = New System.Drawing.Size(108, 27)
         Me.Button8.TabIndex = 12
         Me.Button8.Text = "PC Battery Saver"
         Me.Button8.UseVisualStyleBackColor = True
@@ -166,9 +178,10 @@ Partial Class Welcome
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Roboto Bk", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.DarkViolet
-        Me.Label3.Location = New System.Drawing.Point(14, 176)
+        Me.Label3.Location = New System.Drawing.Point(10, 143)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(813, 23)
+        Me.Label3.Size = New System.Drawing.Size(626, 18)
         Me.Label3.TabIndex = 13
         Me.Label3.Text = "Please Follow The Installation Process Below in Order to Control your Devices fro" &
     "m Windows"
@@ -179,22 +192,13 @@ Partial Class Welcome
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(194, 10)
+        Me.GroupBox1.Location = New System.Drawing.Point(146, 8)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1073, 115)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(805, 93)
         Me.GroupBox1.TabIndex = 15
         Me.GroupBox1.TabStop = False
-        '
-        'IconHome
-        '
-        Me.IconHome.Image = CType(resources.GetObject("IconHome.Image"), System.Drawing.Image)
-        Me.IconHome.Location = New System.Drawing.Point(274, 236)
-        Me.IconHome.Name = "IconHome"
-        Me.IconHome.Size = New System.Drawing.Size(100, 50)
-        Me.IconHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.IconHome.TabIndex = 16
-        Me.IconHome.TabStop = False
         '
         'Label4
         '
@@ -202,18 +206,30 @@ Partial Class Welcome
         Me.Label4.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label4.Font = New System.Drawing.Font("Roboto", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(951, 55)
+        Me.Label4.Location = New System.Drawing.Point(713, 45)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(120, 58)
+        Me.Label4.Size = New System.Drawing.Size(94, 46)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "v1.3"
+        Me.Label4.Text = "v1.4"
+        '
+        'IconHome
+        '
+        Me.IconHome.Image = CType(resources.GetObject("IconHome.Image"), System.Drawing.Image)
+        Me.IconHome.Location = New System.Drawing.Point(206, 192)
+        Me.IconHome.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.IconHome.Name = "IconHome"
+        Me.IconHome.Size = New System.Drawing.Size(75, 41)
+        Me.IconHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.IconHome.TabIndex = 16
+        Me.IconHome.TabStop = False
         '
         'Welcome
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1281, 479)
+        Me.ClientSize = New System.Drawing.Size(961, 389)
         Me.Controls.Add(Me.IconHome)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button8)
@@ -227,6 +243,7 @@ Partial Class Welcome
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Welcome"
         Me.Text = "GoogleHomeWindows"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

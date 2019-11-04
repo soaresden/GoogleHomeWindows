@@ -42,7 +42,7 @@
         End If
 
 
-        'Configuring time 
+        'Configuring timer1 : Timer for Google Command
         Dim thismoment As TimeSpan = TimeSpan.Parse(Format(Now, "HH:mm:ss"))
         Dim nextmoment As TimeSpan = TimeSpan.Parse(InputMinutes.Text).Add(thismoment)
 
@@ -56,6 +56,10 @@
         Timer1.Interval = tempsenmilli
         Timer1.Enabled = True
 
+
+        'Configuring Timer2 :Charging Status and Battery Level
+        Timer2.Interval = "5000"
+        Timer2.Enabled = True
 Fin:
 
     End Sub
@@ -189,5 +193,22 @@ Fin:
         InputTextBox.Text = ""
         InitPython.Text = 1
         System.Threading.Thread.Sleep(3000)
+    End Sub
+
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+        'Get PC Battery and Plug Status
+        Dim powerstatus As PowerStatus = SystemInformation.PowerStatus
+        Dim plugged As String = powerstatus.PowerLineStatus
+        Dim percent As Single = SystemInformation.PowerStatus.BatteryLifePercent
+        Dim pourcentagebatterie As Integer = percent * 100
+        Dim statuschargeur As String
+        If plugged = 1 Then
+            statuschargeur = "Charging"
+        Else
+            statuschargeur = "Discharging"
+        End If
+
+        Charging.Text = statuschargeur
+        BatteryLevel.Text = pourcentagebatterie
     End Sub
 End Class
