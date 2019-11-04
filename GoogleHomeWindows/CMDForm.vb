@@ -152,4 +152,8 @@ Public Class CMDForm
     Private Sub StopTextButton_click(sender As Object, e As EventArgs) Handles StopTextButton.Click
         VoiceStop.PerformClick()
     End Sub
+
+    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged
+
+    End Sub
 End Class

@@ -39,6 +39,7 @@ Partial Class Welcome
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.IconHome = New System.Windows.Forms.PictureBox()
+        Me.Label5 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -165,7 +166,7 @@ Partial Class Welcome
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(681, 355)
+        Me.Button8.Location = New System.Drawing.Point(678, 351)
         Me.Button8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(108, 27)
@@ -224,12 +225,26 @@ Partial Class Welcome
         Me.IconHome.TabIndex = 16
         Me.IconHome.TabStop = False
         '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.Color.Black
+        Me.Label5.Location = New System.Drawing.Point(11, 364)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(583, 15)
+        Me.Label5.TabIndex = 17
+        Me.Label5.Text = "Each Menu can be opened independently. No need to stay on this one to make the wh" &
+    "ole program run."
+        '
         'Welcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(961, 389)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.IconHome)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Button8)
@@ -272,4 +287,5 @@ Partial Class Welcome
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents IconHome As PictureBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
 End Class

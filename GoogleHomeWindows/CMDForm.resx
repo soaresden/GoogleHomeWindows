@@ -179,4 +179,13 @@
   <metadata name="NotifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="RichTextBox1.Text" xml:space="preserve">
+    <value>Tips for Bugs : 
+
+* Check your network and connection
+* Appears that Google limit to 500 request/day, Try a day Later
+* Read well the errors to understand
+* Don't mix Vocal and Text
+* Exit this Form and Open Again</value>
+  </data>
 </root>

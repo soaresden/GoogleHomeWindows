@@ -260,14 +260,12 @@ Partial Class CMDForm
         '
         Me.RichTextBox1.BackColor = System.Drawing.Color.DimGray
         Me.RichTextBox1.ForeColor = System.Drawing.Color.White
-        Me.RichTextBox1.Location = New System.Drawing.Point(462, 314)
+        Me.RichTextBox1.Location = New System.Drawing.Point(462, 289)
         Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(144, 155)
+        Me.RichTextBox1.Size = New System.Drawing.Size(144, 180)
         Me.RichTextBox1.TabIndex = 16
-        Me.RichTextBox1.Text = "Tips for Bugs : " & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(10) & "* Check your network and connection" & Global.Microsoft.VisualBasic.ChrW(10) & "* Appears that Google limit" &
-    " to 500 request/day" & Global.Microsoft.VisualBasic.ChrW(10) & "* Read well the errors to understand" & Global.Microsoft.VisualBasic.ChrW(10) & "* Don't mix Vocal and T" &
-    "ext" & Global.Microsoft.VisualBasic.ChrW(10) & "* Exit this Form and Open Again"
+        Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
         'CMDForm
         '
