@@ -101,6 +101,9 @@ Fin:
         'disabling for secure reason the time
         Timer1.Enabled = False
 
+        'Enable the clock
+        Timer3.Enabled = True
+
         'Set Focus on Smart Device Name
         SmartDeviceName.Focus()
 
@@ -241,16 +244,7 @@ Fin:
         BatteryLevel.Text = pourcentagebatterie
     End Sub
 
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged
-
-    End Sub
-
     Private Sub TurnOn_Click(sender As Object, e As EventArgs) Handles TurnOn.Click
-
         'Force Switch On
         InputTextBox.Text = "switch on " & SmartDeviceName.Text
         MyProcess.StandardInput.WriteLine(InputTextBox.Text)
@@ -276,5 +270,10 @@ Fin:
         'Confirm changes
         ExecuteButton.PerformClick()
         MsgBox("Changed Confirmed")
+    End Sub
+
+    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
+        'Get the time
+        WhatTimeIsIt.Text = TimeSpan.Parse(Format(Now, "HH:mm:ss")).ToString
     End Sub
 End Class

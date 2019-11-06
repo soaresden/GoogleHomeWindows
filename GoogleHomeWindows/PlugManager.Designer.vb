@@ -26,6 +26,7 @@ Partial Class PlugManager
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PlugManager))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.WhatTimeIsIt = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.DeviceName = New System.Windows.Forms.TextBox()
@@ -74,6 +75,7 @@ Partial Class PlugManager
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.PlugManagerBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -99,15 +101,29 @@ Partial Class PlugManager
         '
         Me.GroupBox1.AutoSize = True
         Me.GroupBox1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.GroupBox1.Controls.Add(Me.WhatTimeIsIt)
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Location = New System.Drawing.Point(127, 12)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(0)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(640, 127)
+        Me.GroupBox1.Size = New System.Drawing.Size(640, 156)
         Me.GroupBox1.TabIndex = 17
         Me.GroupBox1.TabStop = False
+        '
+        'WhatTimeIsIt
+        '
+        Me.WhatTimeIsIt.BackColor = System.Drawing.Color.Navy
+        Me.WhatTimeIsIt.Font = New System.Drawing.Font("Segoe UI", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.WhatTimeIsIt.ForeColor = System.Drawing.Color.White
+        Me.WhatTimeIsIt.Location = New System.Drawing.Point(457, 74)
+        Me.WhatTimeIsIt.Margin = New System.Windows.Forms.Padding(4)
+        Me.WhatTimeIsIt.Name = "WhatTimeIsIt"
+        Me.WhatTimeIsIt.ReadOnly = True
+        Me.WhatTimeIsIt.Size = New System.Drawing.Size(175, 61)
+        Me.WhatTimeIsIt.TabIndex = 30
+        Me.WhatTimeIsIt.Text = "18:58:52"
         '
         'Label6
         '
@@ -136,11 +152,11 @@ Partial Class PlugManager
         '
         'DeviceName
         '
-        Me.DeviceName.Location = New System.Drawing.Point(12, 146)
+        Me.DeviceName.Location = New System.Drawing.Point(12, 151)
         Me.DeviceName.Margin = New System.Windows.Forms.Padding(4)
         Me.DeviceName.Name = "DeviceName"
         Me.DeviceName.ReadOnly = True
-        Me.DeviceName.Size = New System.Drawing.Size(126, 22)
+        Me.DeviceName.Size = New System.Drawing.Size(112, 22)
         Me.DeviceName.TabIndex = 27
         '
         'OutputTextBox
@@ -492,12 +508,12 @@ Partial Class PlugManager
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(9, 128)
+        Me.Label11.Location = New System.Drawing.Point(13, 130)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(129, 17)
+        Me.Label11.Size = New System.Drawing.Size(109, 17)
         Me.Label11.TabIndex = 29
-        Me.Label11.Text = "Your Virtual Device"
+        Me.Label11.Text = "V. Device Name"
         '
         'GroupBox4
         '
@@ -615,6 +631,9 @@ Partial Class PlugManager
         '
         Me.PlugManagerBindingSource.DataSource = GetType(GoogleHomeWindows.PlugManager)
         '
+        'Timer3
+        '
+        '
         'PlugManager
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -707,4 +726,6 @@ Partial Class PlugManager
     Friend WithEvents RichTextBox2 As RichTextBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents ConfirmTime As Button
+    Friend WithEvents WhatTimeIsIt As TextBox
+    Friend WithEvents Timer3 As Timer
 End Class
