@@ -11,6 +11,9 @@
         LastCheck.Text = thismoment.ToString
         NextCheck.Text = nextmoment.ToString
         On Error GoTo 0
+
+
+
     End Sub
 
     Private Sub ExecuteButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExecuteButton.Click
@@ -26,17 +29,23 @@
         End If
 
         'Conditionnally chosing what to do 
-        If Val(BatteryLevel.Text) < Val(LowLevel.Text) Then
+        If Val(BatteryLevel.Text) <= Val(LowLevel.Text) Then
             InputTextBox.Text = "switch on " & SmartDeviceName.Text
             MyProcess.StandardInput.WriteLine(InputTextBox.Text)
             MyProcess.StandardInput.Flush()
             InputTextBox.Text = ""
 
-        ElseIf Val(BatteryLevel.Text) > Val(HighLevel.Text) Then
+            'incrementing
+            TurnedOnNo.Text = Val(TurnedOnNo.Text) + 1
+
+        ElseIf Val(BatteryLevel.Text) >= Val(HighLevel.Text) Then
             InputTextBox.Text = "switch off " & SmartDeviceName.Text
             MyProcess.StandardInput.WriteLine(InputTextBox.Text)
             MyProcess.StandardInput.Flush()
             InputTextBox.Text = ""
+
+            'incrementing
+            TurnedOffNo.Text = Val(TurnedOffNo.Text) + 1
         Else
             'nothing to do because it's between [low level;HighLevel] = Discharging or Charging Action
         End If
@@ -73,8 +82,10 @@ Fin:
         Dim statuschargeur As String
         If plugged = 1 Then
             statuschargeur = "Charging"
+            Charging.BackColor = Color.FromArgb(0, 176, 80)
         Else
             statuschargeur = "Discharging"
+            Charging.BackColor = Color.FromArgb(192, 0, 0)
         End If
 
         Charging.Text = statuschargeur
@@ -104,10 +115,15 @@ Fin:
     Private Sub CMDForm_Resize(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Resize
         If Me.WindowState = FormWindowState.Minimized Then
             NotifyIcon1.Visible = True
-            NotifyIcon1.Icon = My.Resources.smartplug
+
+            'Calculate next time check 
+            Dim nexttime As String = "GHome-PlugManager " & Chr(10) & "Next Check at " & NextCheck.Text
+
+            NotifyIcon1.Text = nexttime
+            NotifyIcon1.Icon = My.Resources.logo_notif
             NotifyIcon1.BalloonTipIcon = ToolTipIcon.Info
-            NotifyIcon1.BalloonTipTitle = "GoogleHome SmartPlug"
-            NotifyIcon1.BalloonTipText = "Is still Running in TrayIcon"
+            NotifyIcon1.BalloonTipTitle = "GHome-PlugManager"
+            NotifyIcon1.BalloonTipText = "Continue Running in TrayIcon"
             NotifyIcon1.ShowBalloonTip(30000)
             'Me.Hide()
             ShowInTaskbar = False
@@ -129,6 +145,12 @@ Fin:
         Dim Value As String = LineParts(1)
 
         DeviceName.Text = Value
+
+        'Hide the Buttons for security reasons
+        TurnOn.Visible = False
+        TurnOff.Visible = False
+        Label15.Visible = False
+        ConfirmTime.Visible = False
 
         'CMD
         Me.AcceptButton = ExecuteButton
@@ -178,6 +200,7 @@ Fin:
         'Check if smartdevicename is empty
         If SmartDeviceName.Text = "" Then
             MsgBox("Please Input your Device Name")
+            DeviceName.Focus()
             Exit Sub
         End If
 
@@ -193,6 +216,12 @@ Fin:
         InputTextBox.Text = ""
         InitPython.Text = 1
         System.Threading.Thread.Sleep(3000)
+
+        'Now Buttons can be pushed
+        TurnOn.Visible = True
+        TurnOff.Visible = True
+        Label15.Visible = True
+        ConfirmTime.Visible = True
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
@@ -210,5 +239,42 @@ Fin:
 
         Charging.Text = statuschargeur
         BatteryLevel.Text = pourcentagebatterie
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged
+
+    End Sub
+
+    Private Sub TurnOn_Click(sender As Object, e As EventArgs) Handles TurnOn.Click
+
+        'Force Switch On
+        InputTextBox.Text = "switch on " & SmartDeviceName.Text
+        MyProcess.StandardInput.WriteLine(InputTextBox.Text)
+        MyProcess.StandardInput.Flush()
+        InputTextBox.Text = ""
+
+        'Increment the number
+        TurnedOnNo.Text = Val(TurnedOnNo.Text) + 1
+    End Sub
+
+    Private Sub TurnOff_Click(sender As Object, e As EventArgs) Handles TurnOff.Click
+        'Force Switch Off
+        InputTextBox.Text = "switch off " & SmartDeviceName.Text
+        MyProcess.StandardInput.WriteLine(InputTextBox.Text)
+        MyProcess.StandardInput.Flush()
+        InputTextBox.Text = ""
+
+        'Increment the number
+        TurnedOffNo.Text = Val(TurnedOffNo.Text) + 1
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles ConfirmTime.Click
+        'Confirm changes
+        ExecuteButton.PerformClick()
+        MsgBox("Changed Confirmed")
     End Sub
 End Class

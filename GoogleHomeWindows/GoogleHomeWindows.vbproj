@@ -202,6 +202,7 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+    <None Include="My Project\DataSources\PlugManager.datasource" />
     <None Include="My Project\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <CustomToolNamespace>My</CustomToolNamespace>
@@ -239,13 +240,10 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\smartplug.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\okgooglesnd.mp3" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\okgooglesnd.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo notif.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

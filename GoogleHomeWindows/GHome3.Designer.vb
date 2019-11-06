@@ -31,15 +31,14 @@ Partial Class GHome3
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.RichTextBox3 = New System.Windows.Forms.RichTextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.JsonFilename = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.RichTextBox4 = New System.Windows.Forms.RichTextBox()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.fullcmd = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -129,15 +128,15 @@ Partial Class GHome3
         Me.RichTextBox3.TabIndex = 22
         Me.RichTextBox3.Text = "Drag and Drop your JSON File Here"
         '
-        'TextBox1
+        'JsonFilename
         '
-        Me.TextBox1.BackColor = System.Drawing.SystemColors.InactiveCaption
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(304, 232)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(282, 19)
-        Me.TextBox1.TabIndex = 23
+        Me.JsonFilename.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.JsonFilename.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.JsonFilename.Location = New System.Drawing.Point(304, 232)
+        Me.JsonFilename.Name = "JsonFilename"
+        Me.JsonFilename.ReadOnly = True
+        Me.JsonFilename.Size = New System.Drawing.Size(282, 19)
+        Me.JsonFilename.TabIndex = 23
         '
         'Button1
         '
@@ -197,21 +196,12 @@ Partial Class GHome3
         Me.Button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'Button5
+        'fullcmd
         '
-        Me.Button5.Location = New System.Drawing.Point(163, 359)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(131, 63)
-        Me.Button5.TabIndex = 30
-        Me.Button5.Text = "Open a Cmd"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(304, 313)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(738, 22)
-        Me.TextBox2.TabIndex = 31
+        Me.fullcmd.Location = New System.Drawing.Point(304, 313)
+        Me.fullcmd.Name = "fullcmd"
+        Me.fullcmd.Size = New System.Drawing.Size(738, 22)
+        Me.fullcmd.TabIndex = 31
         '
         'GHome3
         '
@@ -219,21 +209,22 @@ Partial Class GHome3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1054, 450)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.fullcmd)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.RichTextBox4)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.JsonFilename)
         Me.Controls.Add(Me.RichTextBox3)
         Me.Controls.Add(Me.RichTextBox2)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.MaximumSize = New System.Drawing.Size(1072, 497)
+        Me.MinimumSize = New System.Drawing.Size(1072, 497)
         Me.Name = "GHome3"
         Me.Text = "GHome3"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -254,13 +245,12 @@ Partial Class GHome3
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents RichTextBox2 As RichTextBox
     Friend WithEvents RichTextBox3 As RichTextBox
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents JsonFilename As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents RichTextBox4 As RichTextBox
     Friend WithEvents Button4 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents fullcmd As TextBox
 End Class

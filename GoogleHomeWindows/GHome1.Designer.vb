@@ -151,6 +151,8 @@ Partial Class GHome1
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.MaximumSize = New System.Drawing.Size(818, 497)
+        Me.MinimumSize = New System.Drawing.Size(818, 497)
         Me.Name = "GHome1"
         Me.Text = "Google Home 1/3"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

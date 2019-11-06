@@ -276,6 +276,8 @@ Partial Class GHome2
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.PictureBox5)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.MaximumSize = New System.Drawing.Size(818, 734)
+        Me.MinimumSize = New System.Drawing.Size(818, 734)
         Me.Name = "GHome2"
         Me.Text = "GHome2"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

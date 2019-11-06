@@ -53,39 +53,39 @@ Partial Class CMDForm
         '
         Me.OutputTextBox.BackColor = System.Drawing.Color.Black
         Me.OutputTextBox.ForeColor = System.Drawing.Color.White
-        Me.OutputTextBox.Location = New System.Drawing.Point(9, 23)
-        Me.OutputTextBox.Margin = New System.Windows.Forms.Padding(2)
+        Me.OutputTextBox.Location = New System.Drawing.Point(12, 28)
+        Me.OutputTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.OutputTextBox.Multiline = True
         Me.OutputTextBox.Name = "OutputTextBox"
         Me.OutputTextBox.ReadOnly = True
         Me.OutputTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.OutputTextBox.Size = New System.Drawing.Size(452, 362)
+        Me.OutputTextBox.Size = New System.Drawing.Size(601, 445)
         Me.OutputTextBox.TabIndex = 0
         '
         'InputTextBox
         '
-        Me.InputTextBox.Location = New System.Drawing.Point(57, 15)
-        Me.InputTextBox.Margin = New System.Windows.Forms.Padding(2)
+        Me.InputTextBox.Location = New System.Drawing.Point(76, 18)
+        Me.InputTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.InputTextBox.Name = "InputTextBox"
-        Me.InputTextBox.Size = New System.Drawing.Size(227, 20)
+        Me.InputTextBox.Size = New System.Drawing.Size(301, 22)
         Me.InputTextBox.TabIndex = 0
         '
         'ExecuteButton
         '
-        Me.ExecuteButton.Location = New System.Drawing.Point(109, 38)
-        Me.ExecuteButton.Margin = New System.Windows.Forms.Padding(2)
+        Me.ExecuteButton.Location = New System.Drawing.Point(145, 47)
+        Me.ExecuteButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ExecuteButton.Name = "ExecuteButton"
-        Me.ExecuteButton.Size = New System.Drawing.Size(111, 39)
+        Me.ExecuteButton.Size = New System.Drawing.Size(148, 48)
         Me.ExecuteButton.TabIndex = 2
         Me.ExecuteButton.Text = "Send Instruction to Google"
         Me.ExecuteButton.UseVisualStyleBackColor = True
         '
         'VoiceStop
         '
-        Me.VoiceStop.Location = New System.Drawing.Point(77, 27)
-        Me.VoiceStop.Margin = New System.Windows.Forms.Padding(2)
+        Me.VoiceStop.Location = New System.Drawing.Point(103, 33)
+        Me.VoiceStop.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.VoiceStop.Name = "VoiceStop"
-        Me.VoiceStop.Size = New System.Drawing.Size(50, 39)
+        Me.VoiceStop.Size = New System.Drawing.Size(67, 48)
         Me.VoiceStop.TabIndex = 3
         Me.VoiceStop.Text = "STOP"
         Me.VoiceStop.UseVisualStyleBackColor = True
@@ -93,29 +93,27 @@ Partial Class CMDForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(9, 6)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label2.Location = New System.Drawing.Point(12, 7)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(119, 13)
+        Me.Label2.Size = New System.Drawing.Size(155, 17)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Windows Console Log :"
         '
         'GProjectName
         '
-        Me.GProjectName.Location = New System.Drawing.Point(7, 49)
-        Me.GProjectName.Margin = New System.Windows.Forms.Padding(2)
+        Me.GProjectName.Location = New System.Drawing.Point(9, 60)
+        Me.GProjectName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GProjectName.Name = "GProjectName"
-        Me.GProjectName.Size = New System.Drawing.Size(132, 25)
+        Me.GProjectName.Size = New System.Drawing.Size(175, 29)
         Me.GProjectName.TabIndex = 6
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Roboto", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(4, 30)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label3.Location = New System.Drawing.Point(5, 37)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(147, 17)
+        Me.Label3.Size = New System.Drawing.Size(180, 20)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Google Project Name :"
         '
@@ -130,11 +128,11 @@ Partial Class CMDForm
         Me.GroupBox1.Controls.Add(Me.GProjectName)
         Me.GroupBox1.Font = New System.Drawing.Font("Roboto", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(464, 23)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox1.Location = New System.Drawing.Point(619, 28)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox1.Size = New System.Drawing.Size(142, 262)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(189, 322)
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Your Settings"
@@ -142,10 +140,10 @@ Partial Class CMDForm
         'WriteTxt
         '
         Me.WriteTxt.ForeColor = System.Drawing.Color.Black
-        Me.WriteTxt.Location = New System.Drawing.Point(7, 217)
-        Me.WriteTxt.Margin = New System.Windows.Forms.Padding(2)
+        Me.WriteTxt.Location = New System.Drawing.Point(9, 267)
+        Me.WriteTxt.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.WriteTxt.Name = "WriteTxt"
-        Me.WriteTxt.Size = New System.Drawing.Size(132, 40)
+        Me.WriteTxt.Size = New System.Drawing.Size(176, 49)
         Me.WriteTxt.TabIndex = 11
         Me.WriteTxt.Text = "Write ConfigFile"
         Me.WriteTxt.UseVisualStyleBackColor = True
@@ -153,10 +151,10 @@ Partial Class CMDForm
         'ReadTxt
         '
         Me.ReadTxt.ForeColor = System.Drawing.Color.Black
-        Me.ReadTxt.Location = New System.Drawing.Point(7, 172)
-        Me.ReadTxt.Margin = New System.Windows.Forms.Padding(2)
+        Me.ReadTxt.Location = New System.Drawing.Point(9, 212)
+        Me.ReadTxt.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ReadTxt.Name = "ReadTxt"
-        Me.ReadTxt.Size = New System.Drawing.Size(132, 40)
+        Me.ReadTxt.Size = New System.Drawing.Size(176, 49)
         Me.ReadTxt.TabIndex = 10
         Me.ReadTxt.Text = "Read ConfigFile"
         Me.ReadTxt.UseVisualStyleBackColor = True
@@ -165,29 +163,28 @@ Partial Class CMDForm
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Roboto", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(4, 110)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(5, 135)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(135, 17)
+        Me.Label1.Size = New System.Drawing.Size(164, 20)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Virtual Device Name"
         '
         'GVirtualDeviceName
         '
-        Me.GVirtualDeviceName.Location = New System.Drawing.Point(7, 128)
-        Me.GVirtualDeviceName.Margin = New System.Windows.Forms.Padding(2)
+        Me.GVirtualDeviceName.Location = New System.Drawing.Point(9, 158)
+        Me.GVirtualDeviceName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GVirtualDeviceName.Name = "GVirtualDeviceName"
-        Me.GVirtualDeviceName.Size = New System.Drawing.Size(132, 25)
+        Me.GVirtualDeviceName.Size = New System.Drawing.Size(175, 29)
         Me.GVirtualDeviceName.TabIndex = 8
         '
         'VoiceOkGoogle
         '
         Me.VoiceOkGoogle.BackColor = System.Drawing.Color.LemonChiffon
         Me.VoiceOkGoogle.Image = CType(resources.GetObject("VoiceOkGoogle.Image"), System.Drawing.Image)
-        Me.VoiceOkGoogle.Location = New System.Drawing.Point(11, 16)
-        Me.VoiceOkGoogle.Margin = New System.Windows.Forms.Padding(2)
+        Me.VoiceOkGoogle.Location = New System.Drawing.Point(15, 20)
+        Me.VoiceOkGoogle.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.VoiceOkGoogle.Name = "VoiceOkGoogle"
-        Me.VoiceOkGoogle.Size = New System.Drawing.Size(36, 60)
+        Me.VoiceOkGoogle.Size = New System.Drawing.Size(48, 74)
         Me.VoiceOkGoogle.TabIndex = 12
         Me.VoiceOkGoogle.UseVisualStyleBackColor = False
         '
@@ -196,11 +193,11 @@ Partial Class CMDForm
         Me.GroupBox2.BackColor = System.Drawing.Color.LemonChiffon
         Me.GroupBox2.Controls.Add(Me.VoiceStop)
         Me.GroupBox2.Controls.Add(Me.VoiceOkGoogle)
-        Me.GroupBox2.Location = New System.Drawing.Point(9, 388)
-        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 478)
+        Me.GroupBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox2.Size = New System.Drawing.Size(150, 81)
+        Me.GroupBox2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox2.Size = New System.Drawing.Size(200, 100)
         Me.GroupBox2.TabIndex = 13
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "GoogleHome Voice Control"
@@ -213,42 +210,42 @@ Partial Class CMDForm
         Me.GroupBox3.Controls.Add(Me.TextBox1)
         Me.GroupBox3.Controls.Add(Me.InputTextBox)
         Me.GroupBox3.Controls.Add(Me.ExecuteButton)
-        Me.GroupBox3.Location = New System.Drawing.Point(172, 388)
-        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(2)
+        Me.GroupBox3.Location = New System.Drawing.Point(229, 478)
+        Me.GroupBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(2)
-        Me.GroupBox3.Size = New System.Drawing.Size(288, 81)
+        Me.GroupBox3.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox3.Size = New System.Drawing.Size(384, 100)
         Me.GroupBox3.TabIndex = 14
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "GoogleHome Text Control : Confirm with Enter"
         '
         'StopTextButton
         '
-        Me.StopTextButton.Location = New System.Drawing.Point(224, 38)
-        Me.StopTextButton.Margin = New System.Windows.Forms.Padding(2)
+        Me.StopTextButton.Location = New System.Drawing.Point(299, 47)
+        Me.StopTextButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.StopTextButton.Name = "StopTextButton"
-        Me.StopTextButton.Size = New System.Drawing.Size(60, 38)
+        Me.StopTextButton.Size = New System.Drawing.Size(80, 47)
         Me.StopTextButton.TabIndex = 19
         Me.StopTextButton.Text = "STOP"
         Me.StopTextButton.UseVisualStyleBackColor = True
         '
         'TextInit
         '
-        Me.TextInit.Location = New System.Drawing.Point(5, 38)
-        Me.TextInit.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextInit.Location = New System.Drawing.Point(7, 47)
+        Me.TextInit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextInit.Name = "TextInit"
-        Me.TextInit.Size = New System.Drawing.Size(100, 40)
+        Me.TextInit.Size = New System.Drawing.Size(133, 49)
         Me.TextInit.TabIndex = 18
         Me.TextInit.Text = "Init Python"
         Me.TextInit.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(4, 15)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.TextBox1.Location = New System.Drawing.Point(5, 18)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(49, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(64, 22)
         Me.TextBox1.TabIndex = 17
         '
         'NotifyIcon1
@@ -260,25 +257,27 @@ Partial Class CMDForm
         '
         Me.RichTextBox1.BackColor = System.Drawing.Color.DimGray
         Me.RichTextBox1.ForeColor = System.Drawing.Color.White
-        Me.RichTextBox1.Location = New System.Drawing.Point(462, 289)
-        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.RichTextBox1.Location = New System.Drawing.Point(616, 356)
+        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(144, 180)
+        Me.RichTextBox1.Size = New System.Drawing.Size(191, 221)
         Me.RichTextBox1.TabIndex = 16
         Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
         'CMDForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(609, 477)
+        Me.ClientSize = New System.Drawing.Size(812, 587)
         Me.Controls.Add(Me.RichTextBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.OutputTextBox)
         Me.Controls.Add(Me.GroupBox3)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.MaximumSize = New System.Drawing.Size(830, 634)
+        Me.MinimumSize = New System.Drawing.Size(830, 634)
         Me.Name = "CMDForm"
         Me.Text = "CMDForm"
         Me.GroupBox1.ResumeLayout(False)

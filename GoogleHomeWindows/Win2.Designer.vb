@@ -200,6 +200,8 @@ Partial Class Win2
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.MaximumSize = New System.Drawing.Size(818, 497)
+        Me.MinimumSize = New System.Drawing.Size(818, 497)
         Me.Name = "Win2"
         Me.Text = "Windows 2/2"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

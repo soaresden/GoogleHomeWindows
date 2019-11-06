@@ -19,7 +19,7 @@
             Dim right As String = filepathname.Substring(filepathname.Length - 4, 4)
             RichTextBox3.Text = filepathname
             Dim filenamejson As String = GetFileName(filepathname)
-            TextBox1.Text = filenamejson
+            JsonFilename.Text = filenamejson
 
 
             'test if it's a json
@@ -47,10 +47,6 @@
         Return _filename
     End Function
 
-    Private Sub RichTextBox3_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox3.TextChanged
-
-    End Sub
-
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Process.Start("cmd", "/k py -m pip install google-assistant-sdk[samples]")
     End Sub
@@ -58,28 +54,21 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Process.Start("cmd", "/k py -m pip install --upgrade google-auth-oauthlib[tool]")
     End Sub
-
-
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-
-
-
-        'Dim fulladress As String = part1 + part2 + part3
-
-      '  Process.Start("cmd", "/K" & fulladress)
-    End Sub
-
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         Process.Start("cmd", "/K py -m pip install --upgrade pip")
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+    Private Sub Button5_Click(sender As Object, e As EventArgs) 
         Process.Start("CMD")
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+    Private Sub JsonFilename_TextChanged(sender As Object, e As EventArgs) Handles JsonFilename.TextChanged
         Dim partie1 As String = ("google-oauthlib-tool --client-secrets " & Chr(34) & "C:\GoogleAssistant\")
-        Dim partie2 As String = (TextBox1.Text & chr(34))
+        Dim partie2 As String = (JsonFilename.Text & Chr(34))
         Dim partie3 As String = (" --scope https://www.googleapis.com/auth/assistant-sdk-prototype --save --headless")
+
+        fullcmd.Text = partie1 & partie2 & partie3
+
+        Process.Start("cmd", "/K " & fullcmd.Text)
     End Sub
 End Class

@@ -25,13 +25,13 @@ Partial Class Python0
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Python0))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,6 +58,18 @@ Partial Class Python0
         Me.GroupBox1.Size = New System.Drawing.Size(607, 113)
         Me.GroupBox1.TabIndex = 16
         Me.GroupBox1.TabStop = False
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.BackColor = System.Drawing.Color.DodgerBlue
+        Me.Label3.Font = New System.Drawing.Font("Roboto Cn", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.Yellow
+        Me.Label3.Location = New System.Drawing.Point(10, 92)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(305, 18)
+        Me.Label3.TabIndex = 4
+        Me.Label3.Text = "Installing Python to control Google Home on your PC"
         '
         'Label1
         '
@@ -119,18 +131,6 @@ Partial Class Python0
         Me.PictureBox2.TabIndex = 23
         Me.PictureBox2.TabStop = False
         '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.BackColor = System.Drawing.Color.DodgerBlue
-        Me.Label3.Font = New System.Drawing.Font("Roboto Cn", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.Yellow
-        Me.Label3.Location = New System.Drawing.Point(10, 92)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(305, 18)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "Installing Python to control Google Home on your PC"
-        '
         'Python0
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -144,6 +144,8 @@ Partial Class Python0
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.PictureBox1)
+        Me.MaximumSize = New System.Drawing.Size(818, 497)
+        Me.MinimumSize = New System.Drawing.Size(818, 497)
         Me.Name = "Python0"
         Me.Text = "Python0"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
