@@ -120,7 +120,8 @@ Fin:
             NotifyIcon1.Visible = True
 
             'Calculate next time check 
-            Dim nexttime As String = "GHome-PlugManager " & Chr(10) & "Next Check at " & NextCheck.Text
+            Dim remaining As TimeSpan = TimeSpan.Parse(NextCheck.Text).Subtract(TimeSpan.Parse(Format(Now, "HH:mm:ss")))
+            Dim nexttime As String = "GHome-PlugManager " & Chr(10) & "Next Check in " & remaining.ToString
 
             NotifyIcon1.Text = nexttime
             NotifyIcon1.Icon = My.Resources.logo_notif
@@ -128,6 +129,7 @@ Fin:
             NotifyIcon1.BalloonTipTitle = "GHome-PlugManager"
             NotifyIcon1.BalloonTipText = "Continue Running in TrayIcon"
             NotifyIcon1.ShowBalloonTip(30000)
+
             'Me.Hide()
             ShowInTaskbar = False
         End If
@@ -269,11 +271,18 @@ Fin:
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles ConfirmTime.Click
         'Confirm changes
         ExecuteButton.PerformClick()
+
         MsgBox("Changed Confirmed")
     End Sub
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
         'Get the time
         WhatTimeIsIt.Text = TimeSpan.Parse(Format(Now, "HH:mm:ss")).ToString
+
+        'Update the Time in Notification   
+        Dim remaining As TimeSpan = TimeSpan.Parse(NextCheck.Text).Subtract(TimeSpan.Parse(Format(Now, "HH:mm:ss")))
+        Dim nexttime As String = "GHome-PlugManager " & Chr(10) & "Next Check in " & remaining.ToString
+
+        NotifyIcon1.Text = nexttime
     End Sub
 End Class

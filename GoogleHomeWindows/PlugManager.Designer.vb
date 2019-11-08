@@ -74,8 +74,9 @@ Partial Class PlugManager
         Me.Label15 = New System.Windows.Forms.Label()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.PlugManagerBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.PlugManagerBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -577,6 +578,8 @@ Partial Class PlugManager
         Me.TurnedOnNo.Size = New System.Drawing.Size(46, 22)
         Me.TurnedOnNo.TabIndex = 33
         Me.TurnedOnNo.TabStop = False
+        Me.TurnedOnNo.Text = "0"
+        Me.TurnedOnNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'RichTextBox1
         '
@@ -598,6 +601,8 @@ Partial Class PlugManager
         Me.TurnedOffNo.Size = New System.Drawing.Size(46, 22)
         Me.TurnedOffNo.TabIndex = 35
         Me.TurnedOffNo.TabStop = False
+        Me.TurnedOffNo.Text = "0"
+        Me.TurnedOffNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Label15
         '
@@ -627,12 +632,12 @@ Partial Class PlugManager
         Me.TextBox4.Size = New System.Drawing.Size(100, 22)
         Me.TextBox4.TabIndex = 4
         '
+        'Timer3
+        '
+        '
         'PlugManagerBindingSource
         '
         Me.PlugManagerBindingSource.DataSource = GetType(GoogleHomeWindows.PlugManager)
-        '
-        'Timer3
-        '
         '
         'PlugManager
         '
@@ -728,4 +733,5 @@ Partial Class PlugManager
     Friend WithEvents ConfirmTime As Button
     Friend WithEvents WhatTimeIsIt As TextBox
     Friend WithEvents Timer3 As Timer
+    Friend WithEvents Timer4 As Timer
 End Class
