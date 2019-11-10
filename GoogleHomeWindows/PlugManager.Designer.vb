@@ -109,7 +109,7 @@ Partial Class PlugManager
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(0)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(640, 156)
+        Me.GroupBox1.Size = New System.Drawing.Size(640, 176)
         Me.GroupBox1.TabIndex = 17
         Me.GroupBox1.TabStop = False
         '
@@ -132,12 +132,13 @@ Partial Class PlugManager
         Me.Label6.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label6.Font = New System.Drawing.Font("Roboto Cn", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.ForeColor = System.Drawing.Color.Yellow
-        Me.Label6.Location = New System.Drawing.Point(9, 74)
+        Me.Label6.Location = New System.Drawing.Point(10, 87)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(407, 36)
+        Me.Label6.Size = New System.Drawing.Size(407, 72)
         Me.Label6.TabIndex = 26
         Me.Label6.Text = "Script That Will Check PC Battery Level and Switch On/Off the Charge." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Extending " &
-    "your PC Battery Life and Planet Energy ..."
+    "your PC Battery Life and Planet Energy ..." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "You can input a light instead of a" &
+    " plug ...etc" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label1
         '
@@ -268,7 +269,7 @@ Partial Class PlugManager
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(0, 139)
+        Me.Label9.Location = New System.Drawing.Point(1, 139)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(87, 17)
@@ -278,7 +279,7 @@ Partial Class PlugManager
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(1, 111)
+        Me.Label8.Location = New System.Drawing.Point(2, 112)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(86, 17)
@@ -509,12 +510,13 @@ Partial Class PlugManager
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(13, 130)
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(19, 134)
         Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(109, 17)
+        Me.Label11.Size = New System.Drawing.Size(102, 13)
         Me.Label11.TabIndex = 29
-        Me.Label11.Text = "V. Device Name"
+        Me.Label11.Text = "Virtual Device Name"
         '
         'GroupBox4
         '

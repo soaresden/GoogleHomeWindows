@@ -40,6 +40,8 @@ Partial Class Welcome
         Me.Label4 = New System.Windows.Forms.Label()
         Me.IconHome = New System.Windows.Forms.PictureBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label7 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -77,9 +79,9 @@ Partial Class Welcome
         Me.Label2.ForeColor = System.Drawing.Color.Yellow
         Me.Label2.Location = New System.Drawing.Point(11, 76)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(379, 18)
+        Me.Label2.Size = New System.Drawing.Size(336, 18)
         Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Your Windows Interface for controlling your Goole Home Devices"
+        Me.Label2.Text = "Your Windows Interface for controlling your Google Home"
         '
         'PictureBox2
         '
@@ -154,20 +156,20 @@ Partial Class Welcome
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(1180, 236)
+        Me.Button6.Location = New System.Drawing.Point(928, 236)
         Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(72, 68)
+        Me.Button6.Size = New System.Drawing.Size(108, 68)
         Me.Button6.TabIndex = 10
-        Me.Button6.Text = "OK Google"
+        Me.Button6.Text = """OK Google"""
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(904, 432)
+        Me.Button8.Location = New System.Drawing.Point(928, 360)
         Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(144, 33)
+        Me.Button8.Size = New System.Drawing.Size(108, 66)
         Me.Button8.TabIndex = 12
         Me.Button8.Text = "PC Battery Saver"
         Me.Button8.UseVisualStyleBackColor = True
@@ -177,7 +179,7 @@ Partial Class Welcome
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Roboto Bk", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.DarkViolet
-        Me.Label3.Location = New System.Drawing.Point(13, 176)
+        Me.Label3.Location = New System.Drawing.Point(12, 127)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(813, 23)
         Me.Label3.TabIndex = 13
@@ -208,7 +210,7 @@ Partial Class Welcome
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(120, 58)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "v1.5"
+        Me.Label4.Text = "v1.6"
         '
         'IconHome
         '
@@ -233,12 +235,34 @@ Partial Class Welcome
         Me.Label5.Text = "Each Menu can be opened independently. No need to stay on this one to make the wh" &
     "ole program run."
         '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Roboto Bk", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(1001, 183)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(184, 24)
+        Me.Label6.TabIndex = 18
+        Me.Label6.Text = "Using Google Home"
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Roboto Bk", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(478, 203)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(78, 24)
+        Me.Label7.TabIndex = 19
+        Me.Label7.Text = "Tutorial"
+        '
         'Welcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1281, 479)
+        Me.Controls.Add(Me.Label7)
+        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.IconHome)
         Me.Controls.Add(Me.Label3)
@@ -285,4 +309,6 @@ Partial Class Welcome
     Friend WithEvents IconHome As PictureBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents Label7 As Label
 End Class

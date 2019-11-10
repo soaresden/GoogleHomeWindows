@@ -8,7 +8,7 @@
     <OutputType>WinExe</OutputType>
     <StartupObject>GoogleHomeWindows.My.MyApplication</StartupObject>
     <RootNamespace>GoogleHomeWindows</RootNamespace>
-    <AssemblyName>GoogleHomeWindows</AssemblyName>
+    <AssemblyName>Windows Google Home</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
@@ -37,7 +37,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>GoogleHomeWindows.xml</DocumentationFile>
+    <DocumentationFile>Windows Google Home.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -47,7 +47,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>GoogleHomeWindows.xml</DocumentationFile>
+    <DocumentationFile>Windows Google Home.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -91,6 +91,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
     <Compile Include="CMDForm.Designer.vb">
       <DependentUpon>CMDForm.vb</DependentUpon>
     </Compile>
