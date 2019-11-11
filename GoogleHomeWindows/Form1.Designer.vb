@@ -210,7 +210,7 @@ Partial Class Welcome
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(120, 58)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "v1.6"
+        Me.Label4.Text = "v1.7"
         '
         'IconHome
         '
