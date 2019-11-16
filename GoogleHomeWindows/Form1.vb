@@ -1,4 +1,6 @@
-﻿Public Class Welcome
+﻿Imports System.ComponentModel
+
+Public Class Welcome
     Dim WorkingFolder As String = "C:\GoogleAssistant\"
 
 
@@ -46,7 +48,35 @@
     End Sub
 
     Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
-        Dim MyForm As New PlugManager
-        MyForm.Show(PlugManager)
+        Dim MyForm As New BatterySaver
+        MyForm.Show(BatterySaver)
     End Sub
+
+    Private Sub Welcome_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub NotifyIcon1_DoubleClick(ByVal sender As Object, ByVal e As System.EventArgs) Handles NotifyIcon1.DoubleClick
+        'Me.Show()
+        ShowInTaskbar = True
+        Me.WindowState = FormWindowState.Normal
+        NotifyIcon1.Visible = False
+    End Sub
+
+    Private Sub CMDForm_Resize(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Resize
+        If Me.WindowState = FormWindowState.Minimized Then
+            NotifyIcon1.Visible = True
+
+            NotifyIcon1.Text = "Google Home Windows Menu"
+            NotifyIcon1.Icon = My.Resources.logo_home
+            NotifyIcon1.BalloonTipIcon = ToolTipIcon.Info
+            NotifyIcon1.BalloonTipTitle = "GHome-PlugManager"
+            NotifyIcon1.BalloonTipText = "Menu is Still Running in Tray"
+            NotifyIcon1.ShowBalloonTip(30000)
+
+            'Me.Hide()
+            ShowInTaskbar = False
+        End If
+    End Sub
+
 End Class

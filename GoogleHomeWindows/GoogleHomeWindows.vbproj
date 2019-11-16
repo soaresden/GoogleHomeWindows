@@ -138,10 +138,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="PlugManager.Designer.vb">
-      <DependentUpon>PlugManager.vb</DependentUpon>
+    <Compile Include="BatterySaver.Designer.vb">
+      <DependentUpon>BatterySaver.vb</DependentUpon>
     </Compile>
-    <Compile Include="PlugManager.vb">
+    <Compile Include="BatterySaver.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Python0.Designer.vb">
@@ -185,8 +185,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="PlugManager.resx">
-      <DependentUpon>PlugManager.vb</DependentUpon>
+    <EmbeddedResource Include="BatterySaver.resx">
+      <DependentUpon>BatterySaver.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Python0.resx">
       <DependentUpon>Python0.vb</DependentUpon>

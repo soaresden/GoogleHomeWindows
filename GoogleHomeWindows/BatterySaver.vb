@@ -1,4 +1,4 @@
-﻿Public Class PlugManager
+﻿Public Class BatterySaver
     Private WithEvents MyProcess As Process
     Private Delegate Sub AppendOutputTextDelegate(ByVal text As String)
 

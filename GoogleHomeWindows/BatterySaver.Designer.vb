@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class PlugManager
+Partial Class BatterySaver
     Inherits System.Windows.Forms.Form
 
     'Form remplace la méthode Dispose pour nettoyer la liste des composants.
@@ -23,7 +23,7 @@ Partial Class PlugManager
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PlugManager))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BatterySaver))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.WhatTimeIsIt = New System.Windows.Forms.TextBox()
@@ -204,6 +204,7 @@ Partial Class PlugManager
         Me.SmartDeviceName.Name = "SmartDeviceName"
         Me.SmartDeviceName.Size = New System.Drawing.Size(132, 22)
         Me.SmartDeviceName.TabIndex = 0
+        Me.SmartDeviceName.Text = "prise pc"
         '
         'Label2
         '
@@ -639,9 +640,9 @@ Partial Class PlugManager
         '
         'PlugManagerBindingSource
         '
-        Me.PlugManagerBindingSource.DataSource = GetType(GoogleHomeWindows.PlugManager)
+        Me.PlugManagerBindingSource.DataSource = GetType(GoogleHomeWindows.BatterySaver)
         '
-        'PlugManager
+        'BatterySaver
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -662,9 +663,9 @@ Partial Class PlugManager
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.MaximumSize = New System.Drawing.Size(794, 552)
         Me.MinimumSize = New System.Drawing.Size(794, 552)
-        Me.Name = "PlugManager"
+        Me.Name = "BatterySaver"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "PlugManager"
+        Me.Text = "Battery Saver"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

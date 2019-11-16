@@ -22,6 +22,7 @@ Partial Class Welcome
     'Ne la modifiez pas à l'aide de l'éditeur de code.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Welcome))
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -42,6 +43,7 @@ Partial Class Welcome
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -210,7 +212,7 @@ Partial Class Welcome
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(120, 58)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "v1.7"
+        Me.Label4.Text = "v1.8"
         '
         'IconHome
         '
@@ -254,6 +256,11 @@ Partial Class Welcome
         Me.Label7.Size = New System.Drawing.Size(78, 24)
         Me.Label7.TabIndex = 19
         Me.Label7.Text = "Tutorial"
+        '
+        'NotifyIcon1
+        '
+        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Visible = True
         '
         'Welcome
         '
@@ -311,4 +318,5 @@ Partial Class Welcome
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
+    Friend WithEvents NotifyIcon1 As NotifyIcon
 End Class
