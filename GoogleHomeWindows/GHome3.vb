@@ -69,6 +69,10 @@
 
         fullcmd.Text = partie1 & partie2 & partie3
 
-        Process.Start("cmd", "/K " & fullcmd.Text)
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim commando As String = "/k " & fullcmd.Text
+        Process.Start("cmd", commando)
     End Sub
 End Class

@@ -36,6 +36,7 @@ Partial Class Win2
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.RichTextBox2 = New System.Windows.Forms.RichTextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -182,12 +183,22 @@ Partial Class Win2
         Me.RichTextBox2.Text = "Set a custom lowercase UNIQUE name for your device" & Global.Microsoft.VisualBasic.ChrW(10) & "User a ""-"" between to help you" &
     " being unique" & Global.Microsoft.VisualBasic.ChrW(10) & "No Spaces !"
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(508, 189)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(99, 17)
+        Me.Label3.TabIndex = 30
+        Me.Label3.Text = "vdevicename :"
+        '
         'Win2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.RichTextBox2)
         Me.Controls.Add(Me.TextBox6)
         Me.Controls.Add(Me.RichTextBox1)
@@ -225,4 +236,5 @@ Partial Class Win2
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents RichTextBox2 As RichTextBox
+    Friend WithEvents Label3 As Label
 End Class
