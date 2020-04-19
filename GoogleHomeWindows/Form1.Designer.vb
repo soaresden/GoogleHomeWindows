@@ -210,9 +210,9 @@ Partial Class Welcome
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(951, 55)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(122, 63)
+        Me.Label4.Size = New System.Drawing.Size(80, 63)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "v1.9"
+        Me.Label4.Text = "v2"
         '
         'IconHome
         '
