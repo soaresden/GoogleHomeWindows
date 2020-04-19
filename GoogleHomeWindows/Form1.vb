@@ -3,7 +3,6 @@
 Public Class Welcome
     Dim WorkingFolder As String = "C:\GoogleAssistant\"
 
-
     Private Sub Form1_Shown(sender As Object, e As EventArgs) Handles Me.Shown
         'Forcing Creating WOrking Folder
         If (Not System.IO.Directory.Exists(WorkingFolder)) Then System.IO.Directory.CreateDirectory(WorkingFolder)

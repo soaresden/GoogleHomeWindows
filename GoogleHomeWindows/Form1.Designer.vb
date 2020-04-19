@@ -69,7 +69,7 @@ Partial Class Welcome
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(3, 18)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(791, 58)
+        Me.Label1.Size = New System.Drawing.Size(794, 63)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Welcome to Windows Google Home"
         '
@@ -161,7 +161,7 @@ Partial Class Welcome
         Me.Button6.Location = New System.Drawing.Point(928, 236)
         Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(108, 68)
+        Me.Button6.Size = New System.Drawing.Size(108, 66)
         Me.Button6.TabIndex = 10
         Me.Button6.Text = """OK Google"""
         Me.Button6.UseVisualStyleBackColor = True
@@ -179,11 +179,11 @@ Partial Class Welcome
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Roboto Bk", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.DarkViolet
         Me.Label3.Location = New System.Drawing.Point(12, 127)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(813, 23)
+        Me.Label3.Size = New System.Drawing.Size(786, 24)
         Me.Label3.TabIndex = 13
         Me.Label3.Text = "Please Follow The Installation Process Below in Order to Control your Devices fro" &
     "m Windows"
@@ -210,7 +210,7 @@ Partial Class Welcome
         Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(951, 55)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(120, 58)
+        Me.Label4.Size = New System.Drawing.Size(122, 63)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "v1.9"
         '
@@ -232,7 +232,7 @@ Partial Class Welcome
         Me.Label5.ForeColor = System.Drawing.Color.Black
         Me.Label5.Location = New System.Drawing.Point(15, 448)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(795, 20)
+        Me.Label5.Size = New System.Drawing.Size(796, 23)
         Me.Label5.TabIndex = 17
         Me.Label5.Text = "Each Menu can be opened independently. No need to stay on this one to make the wh" &
     "ole program run."
@@ -240,20 +240,20 @@ Partial Class Welcome
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Roboto Bk", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(1001, 183)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(184, 24)
+        Me.Label6.Size = New System.Drawing.Size(187, 25)
         Me.Label6.TabIndex = 18
         Me.Label6.Text = "Using Google Home"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Roboto Bk", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(478, 203)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(78, 24)
+        Me.Label7.Size = New System.Drawing.Size(77, 25)
         Me.Label7.TabIndex = 19
         Me.Label7.Text = "Tutorial"
         '

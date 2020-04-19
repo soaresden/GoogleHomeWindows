@@ -33,6 +33,7 @@ Public Class CMDForm
             'Me.Hide()
             ShowInTaskbar = False
         End If
+
     End Sub
 
     Private Sub CMDForm_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
@@ -61,6 +62,50 @@ Public Class CMDForm
         TextBox1.Text = 0
 
     End Sub
+    Private Sub OverlayMode_Button(sender As Object, e As EventArgs) Handles OverlayMode.Click
+        'Hiding Boxes
+        GroupBoxVoice.Hide()
+        GroupBoxInput.Hide()
+        RichTextBox1.Hide()
+
+        'Moving Stuff
+        OutputTextBox.Size = New Size(575, 80)
+        OutputTextBox.Location = New Point(10, 290)
+
+        Me.Size = New Size(600, 516)
+
+        Mode.Text = "Overlay"
+
+    End Sub
+    Private Sub NormalMode_Button(sender As Object, e As EventArgs) Handles NormalMode.Click
+        'Showing Boxes
+        GroupBoxVoice.Show()
+        GroupBoxInput.Show()
+        RichTextBox1.Show()
+
+        Me.Size = New Size(1181, 516)
+
+        'Default Size
+        OutputTextBox.Location = New Point(585, 137)
+        OutputTextBox.Size = New Size(285, 250)
+
+        Me.Opacity = 1
+
+        Mode.Text = "Normal"
+    End Sub
+    Private Sub CMDForm_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        Me.Opacity = 1
+    End Sub
+    Private Sub CMDForm_Deactivate(sender As Object, e As EventArgs) Handles Me.Deactivate
+        If Mode.Text = "Normal" Then
+            Exit Sub
+        Else
+            Me.Opacity = 0.25
+        End If
+
+
+    End Sub
+
     Private Sub MyProcess_ErrorDataReceived(ByVal sender As Object, ByVal e As System.Diagnostics.DataReceivedEventArgs) Handles MyProcess.ErrorDataReceived
         AppendOutputText(vbCrLf & "Error: " & e.Data)
     End Sub
@@ -194,102 +239,104 @@ Public Class CMDForm
 
     End Sub
 
-    Private Sub lamp1on_Click(sender As Object, e As EventArgs) Handles lamp1on.Click
+    Private Sub Lamp1on_Click(sender As Object, e As EventArgs) Handles lamp1on.Click
         InputTextBox.Text = "Switch on " & lamp1.Text
         ExecuteButton.PerformClick()
     End Sub
-    Private Sub lamp2on_Click(sender As Object, e As EventArgs) Handles lamp2on.Click
+    Private Sub Lamp2on_Click(sender As Object, e As EventArgs) Handles lamp2on.Click
         InputTextBox.Text = "Switch on " & lamp2.Text
         ExecuteButton.PerformClick()
     End Sub
-    Private Sub chromecast1on_Click(sender As Object, e As EventArgs) Handles chromecast1on.Click
+    Private Sub Chromecast1on_Click(sender As Object, e As EventArgs) Handles chromecast1on.Click
         InputTextBox.Text = "Switch on " & chromecast1on.Text
         ExecuteButton.PerformClick()
     End Sub
 
-    Private Sub chromecast2on_Click(sender As Object, e As EventArgs) Handles chromecast2on.Click
+    Private Sub Chromecast2on_Click(sender As Object, e As EventArgs) Handles chromecast2on.Click
         InputTextBox.Text = "Switch on " & chromecast2on.Text
         ExecuteButton.PerformClick()
     End Sub
 
-    Private Sub camera1on_Click(sender As Object, e As EventArgs) Handles camera1on.Click
+    Private Sub Camera1on_Click(sender As Object, e As EventArgs) Handles camera1on.Click
         InputTextBox.Text = "Switch on " & camera1.Text
         ExecuteButton.PerformClick()
     End Sub
 
-    Private Sub camera2on_Click(sender As Object, e As EventArgs) Handles camera2on.Click
+    Private Sub Camera2on_Click(sender As Object, e As EventArgs) Handles camera2on.Click
         InputTextBox.Text = "Switch on " & camera2.Text
         ExecuteButton.PerformClick()
     End Sub
 
-    Private Sub aspirateur1on_Click(sender As Object, e As EventArgs) Handles aspirateur1on.Click
+    Private Sub Aspirateur1on_Click(sender As Object, e As EventArgs) Handles aspirateur1on.Click
         InputTextBox.Text = "Switch on " & aspirateur1.Text
         ExecuteButton.PerformClick()
     End Sub
 
-    Private Sub aspirateur2on_Click(sender As Object, e As EventArgs) Handles aspirateur2on.Click
+    Private Sub Aspirateur2on_Click(sender As Object, e As EventArgs) Handles aspirateur2on.Click
         InputTextBox.Text = "Switch on " & aspirateur2.Text
         ExecuteButton.PerformClick()
     End Sub
 
-    Private Sub prise1on_Click(sender As Object, e As EventArgs) Handles prise1on.Click
+    Private Sub Prise1on_Click(sender As Object, e As EventArgs) Handles prise1on.Click
         InputTextBox.Text = "Switch on " & prise1.Text
         ExecuteButton.PerformClick()
     End Sub
 
-    Private Sub prise2on_Click(sender As Object, e As EventArgs) Handles prise2on.Click
+    Private Sub Prise2on_Click(sender As Object, e As EventArgs) Handles prise2on.Click
         InputTextBox.Text = "Switch on " & prise2.Text
         ExecuteButton.PerformClick()
     End Sub
 
-    Private Sub lamp1off_Click(sender As Object, e As EventArgs) Handles lamp1off.Click
+    Private Sub Lamp1off_Click(sender As Object, e As EventArgs) Handles lamp1off.Click
         InputTextBox.Text = "Switch off " & lamp1.Text
         ExecuteButton.PerformClick()
 
     End Sub
 
-    Private Sub lamp2off_Click(sender As Object, e As EventArgs) Handles lamp2off.Click
+    Private Sub Lamp2off_Click(sender As Object, e As EventArgs) Handles lamp2off.Click
         InputTextBox.Text = "Switch off " & lamp2.Text
         ExecuteButton.PerformClick()
     End Sub
 
-    Private Sub chromecast1off_Click(sender As Object, e As EventArgs) Handles chromecast1off.Click
+    Private Sub Chromecast1off_Click(sender As Object, e As EventArgs) Handles chromecast1off.Click
         InputTextBox.Text = "Switch off " & chromecast1.Text
         ExecuteButton.PerformClick()
     End Sub
 
-    Private Sub chromecast2off_Click(sender As Object, e As EventArgs) Handles chromecast2off.Click
+    Private Sub Chromecast2off_Click(sender As Object, e As EventArgs) Handles chromecast2off.Click
         InputTextBox.Text = "Switch off " & chromecast2.Text
         ExecuteButton.PerformClick()
     End Sub
 
-    Private Sub camera1off_Click(sender As Object, e As EventArgs) Handles camera1off.Click
+    Private Sub Camera1off_Click(sender As Object, e As EventArgs) Handles camera1off.Click
         InputTextBox.Text = "Switch off " & camera1.Text
         ExecuteButton.PerformClick()
     End Sub
 
-    Private Sub camera2off_Click(sender As Object, e As EventArgs) Handles camera2off.Click
+    Private Sub Camera2off_Click(sender As Object, e As EventArgs) Handles camera2off.Click
         InputTextBox.Text = "Switch off " & camera2.Text
         ExecuteButton.PerformClick()
     End Sub
 
-    Private Sub aspirateur1off_Click(sender As Object, e As EventArgs) Handles aspirateur1off.Click
+    Private Sub Aspirateur1off_Click(sender As Object, e As EventArgs) Handles aspirateur1off.Click
         InputTextBox.Text = "Switch off " & aspirateur1.Text
         ExecuteButton.PerformClick()
     End Sub
 
-    Private Sub aspirateur2off_Click(sender As Object, e As EventArgs) Handles aspirateur2off.Click
+    Private Sub Aspirateur2off_Click(sender As Object, e As EventArgs) Handles aspirateur2off.Click
         InputTextBox.Text = "Switch off " & aspirateur2.Text
         ExecuteButton.PerformClick()
     End Sub
 
-    Private Sub prise1off_Click(sender As Object, e As EventArgs) Handles prise1off.Click
+    Private Sub Prise1off_Click(sender As Object, e As EventArgs) Handles prise1off.Click
         InputTextBox.Text = "Switch off " & prise1.Text
         ExecuteButton.PerformClick()
     End Sub
 
-    Private Sub prise2off_Click(sender As Object, e As EventArgs) Handles prise2off.Click
+    Private Sub Prise2off_Click(sender As Object, e As EventArgs) Handles prise2off.Click
         InputTextBox.Text = "Switch off " & prise2.Text
         ExecuteButton.PerformClick()
     End Sub
+
+
 End Class
