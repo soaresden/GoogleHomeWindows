@@ -176,6 +176,13 @@
         VVdvvL78+Vkl26YXbJ5a+cJsDgLXSvQcyjlJd/d/AeHXd7tqDe4tAAAAAElFTkSuQmCC
 </value>
   </data>
+  <data name="RichTextBox2.Text" xml:space="preserve">
+    <value>Google is in Conversation mode :
+She will first listen by recording you.
+You talk and she will answer.
+Let her finish her speak and she will record you again (see the log at your right)
+You have to exit this window to fully stop Google.</value>
+  </data>
   <metadata name="NotifyIcon1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

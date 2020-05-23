@@ -44,6 +44,7 @@ Partial Class Welcome
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
@@ -67,7 +68,7 @@ Partial Class Welcome
         Me.Label1.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label1.Font = New System.Drawing.Font("Roboto", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(3, 18)
+        Me.Label1.Location = New System.Drawing.Point(2, 2)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(794, 63)
         Me.Label1.TabIndex = 1
@@ -79,7 +80,7 @@ Partial Class Welcome
         Me.Label2.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label2.Font = New System.Drawing.Font("Roboto Cn", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.Yellow
-        Me.Label2.Location = New System.Drawing.Point(11, 76)
+        Me.Label2.Location = New System.Drawing.Point(10, 63)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(336, 18)
         Me.Label2.TabIndex = 2
@@ -91,14 +92,14 @@ Partial Class Welcome
         Me.PictureBox2.Location = New System.Drawing.Point(12, 174)
         Me.PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(1255, 297)
+        Me.PictureBox2.Size = New System.Drawing.Size(1233, 252)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 3
         Me.PictureBox2.TabStop = False
         '
         'Button0
         '
-        Me.Button0.Location = New System.Drawing.Point(152, 374)
+        Me.Button0.Location = New System.Drawing.Point(147, 358)
         Me.Button0.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button0.Name = "Button0"
         Me.Button0.Size = New System.Drawing.Size(103, 33)
@@ -108,7 +109,7 @@ Partial Class Welcome
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(271, 374)
+        Me.Button1.Location = New System.Drawing.Point(272, 358)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(103, 33)
@@ -118,7 +119,7 @@ Partial Class Welcome
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(396, 374)
+        Me.Button2.Location = New System.Drawing.Point(381, 358)
         Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(103, 33)
@@ -128,7 +129,7 @@ Partial Class Welcome
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(515, 374)
+        Me.Button3.Location = New System.Drawing.Point(506, 358)
         Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(103, 33)
@@ -138,7 +139,7 @@ Partial Class Welcome
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(645, 374)
+        Me.Button4.Location = New System.Drawing.Point(636, 358)
         Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(103, 33)
@@ -148,7 +149,7 @@ Partial Class Welcome
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(763, 374)
+        Me.Button5.Location = New System.Drawing.Point(754, 358)
         Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(103, 33)
@@ -158,7 +159,7 @@ Partial Class Welcome
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(928, 236)
+        Me.Button6.Location = New System.Drawing.Point(911, 220)
         Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(108, 66)
@@ -168,7 +169,7 @@ Partial Class Welcome
         '
         'Button8
         '
-        Me.Button8.Location = New System.Drawing.Point(928, 360)
+        Me.Button8.Location = New System.Drawing.Point(911, 341)
         Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(108, 66)
@@ -181,7 +182,7 @@ Partial Class Welcome
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.ForeColor = System.Drawing.Color.DarkViolet
-        Me.Label3.Location = New System.Drawing.Point(12, 127)
+        Me.Label3.Location = New System.Drawing.Point(233, 154)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(786, 24)
         Me.Label3.TabIndex = 13
@@ -191,6 +192,7 @@ Partial Class Welcome
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.GroupBox1.Controls.Add(Me.RichTextBox1)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.Label2)
@@ -208,16 +210,16 @@ Partial Class Welcome
         Me.Label4.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label4.Font = New System.Drawing.Font("Roboto", 28.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(951, 55)
+        Me.Label4.Location = New System.Drawing.Point(928, 52)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(80, 63)
+        Me.Label4.Size = New System.Drawing.Size(122, 63)
         Me.Label4.TabIndex = 3
-        Me.Label4.Text = "v2"
+        Me.Label4.Text = "v2.1"
         '
         'IconHome
         '
         Me.IconHome.Image = CType(resources.GetObject("IconHome.Image"), System.Drawing.Image)
-        Me.IconHome.Location = New System.Drawing.Point(275, 236)
+        Me.IconHome.Location = New System.Drawing.Point(272, 220)
         Me.IconHome.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.IconHome.Name = "IconHome"
         Me.IconHome.Size = New System.Drawing.Size(100, 50)
@@ -230,7 +232,7 @@ Partial Class Welcome
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Roboto", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.ForeColor = System.Drawing.Color.Black
-        Me.Label5.Location = New System.Drawing.Point(15, 448)
+        Me.Label5.Location = New System.Drawing.Point(12, 428)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(796, 23)
         Me.Label5.TabIndex = 17
@@ -262,12 +264,22 @@ Partial Class Welcome
         Me.NotifyIcon1.Text = "NotifyIcon1"
         Me.NotifyIcon1.Visible = True
         '
+        'RichTextBox1
+        '
+        Me.RichTextBox1.BackColor = System.Drawing.Color.DodgerBlue
+        Me.RichTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RichTextBox1.Location = New System.Drawing.Point(6, 84)
+        Me.RichTextBox1.Name = "RichTextBox1"
+        Me.RichTextBox1.Size = New System.Drawing.Size(485, 24)
+        Me.RichTextBox1.TabIndex = 21
+        Me.RichTextBox1.Text = "Based on : https://www.lifewire.com/google-assistant-on-windows-4628292"
+        '
         'Welcome
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(1281, 479)
+        Me.ClientSize = New System.Drawing.Size(1257, 455)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -319,4 +331,5 @@ Partial Class Welcome
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents NotifyIcon1 As NotifyIcon
+    Friend WithEvents RichTextBox1 As RichTextBox
 End Class

@@ -56,7 +56,7 @@ Public Class CMDForm
         'Hide Groupbox Input and Voice
 
         GroupBoxInput.Visible = False
-        GroupBoxVoice.Visible = False
+        GroupBoxVoice.Visible = True
 
 
         TextBox1.Text = 0
@@ -103,7 +103,6 @@ Public Class CMDForm
             Me.Opacity = 0.25
         End If
 
-
     End Sub
 
     Private Sub MyProcess_ErrorDataReceived(ByVal sender As Object, ByVal e As System.Diagnostics.DataReceivedEventArgs) Handles MyProcess.ErrorDataReceived
@@ -123,16 +122,27 @@ Public Class CMDForm
         MyProcess.StandardInput.Flush()
         MyProcess.Kill()
         MyProcess.Close()
+
+        Dim pProcess() As Process = System.Diagnostics.Process.GetProcessesByName("py")
+        For Each p As Process In pProcess
+            p.Kill()
+        Next
+
+        Dim pProcess2() As Process = System.Diagnostics.Process.GetProcessesByName("python")
+        For Each p As Process In pProcess2
+            p.Kill()
+        Next
+
         On Error GoTo 0
     End Sub
+
+
     Private Sub ExecuteButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ExecuteButton.Click
         MyProcess.StandardInput.WriteLine(InputTextBox.Text)
         InputTextBox.Text = ""
         InputTextBox.Focus()
         System.Threading.Thread.Sleep(3000)
         TextBox1.Text = Val(TextBox1.Text) + 1
-
-        'Hide 
     End Sub
 
     Private Sub AppendOutputText(ByVal text As String)
@@ -179,20 +189,27 @@ Public Class CMDForm
             MsgBox("Please Verify your Device/Project Name")
         End If
 
+        'Launch VocalCode
+        Dim OriginalVocalCode As String = "py -m googlesamples.assistant.grpc.pushtotalk --device-model-id VIRTUALDEVICE --project-id PROJECTNAME"
+        Dim FinalVocalCode As String = Replace(Replace(OriginalVocalCode, "VIRTUALDEVICE", GVirtualDeviceName.Text), "PROJECTNAME", GProjectName.Text)
+
+        Dim Textavant As String = InputTextBox.Text
+        InputTextBox.Text = FinalVocalCode
+        MyProcess.StandardInput.WriteLine(FinalVocalCode)
+        InputTextBox.Text = ""
+        System.Threading.Thread.Sleep(3000)
+
+        'hide the button
+        TextInit.Visible = False
+
+        'Groupboxes Appears
+        GroupBoxInput.Visible = True
+        GroupBoxVoice.Visible = True
+
+
         'Play the sound File
         My.Computer.Audio.Play(My.Resources.okgooglesnd, AudioPlayMode.Background)
 
-        'Launch the Vocal Code
-        Dim OriginalVocalCode As String = "py -m googlesamples.assistant.grpc.pushtotalk --device-model-id VIRTUALDEVICE --project-id PROJECTNAME"
-        Dim FinalVocalCode As String = Replace(Replace(OriginalVocalCode, "VIRTUALDEVICE", GVirtualDeviceName.Text), "PROJECTNAME", GProjectName.Text)
-        InputTextBox.Text = FinalVocalCode
-        ExecuteButton.PerformClick()
-
-        'Hide inputgroupbox
-        GroupBoxInput.Visible = False
-    End Sub
-    Private Sub VoiceStop_Click(sender As System.Object, e As System.EventArgs) Handles VoiceStop.Click
-        MyProcess.StandardInput.WriteLine("EXIT") 'send an EXIT command to the Command Prompt
     End Sub
     Private Sub TextInit_Click(sender As Object, e As EventArgs) Handles TextInit.Click
         Dim basecommand As String = ("python -m googlesamples.assistant.grpc.textinput --device-model-id DEVICENAME --device-id DEVICENAME")
@@ -211,12 +228,7 @@ Public Class CMDForm
         GroupBoxInput.Visible = True
         GroupBoxVoice.Visible = True
 
-
     End Sub
-    Private Sub StopTextButton_click(sender As Object, e As EventArgs) Handles StopTextButton.Click
-        VoiceStop.PerformClick()
-    End Sub
-
     Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox1.TextChanged
 
     End Sub
