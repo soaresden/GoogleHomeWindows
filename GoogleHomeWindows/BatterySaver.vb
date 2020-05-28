@@ -28,6 +28,12 @@
             Exit Sub
         End If
 
+        'Check if AlwaysOn is checked
+        If AlwaysOn.Checked = True Then
+            TurnOn.PerformClick()
+            GoTo sautecondition
+        End If
+
         'Conditionnally chosing what to do 
         If Val(BatteryLevel.Text) <= Val(LowLevel.Text) Then
             InputTextBox.Text = "switch on " & SmartDeviceName.Text
@@ -50,7 +56,7 @@
             'nothing to do because it's between [low level;HighLevel] = Discharging or Charging Action
         End If
 
-
+sautecondition:
         'Configuring timer1 : Timer for Google Command
         Dim thismoment As TimeSpan = TimeSpan.Parse(Format(Now, "HH:mm:ss"))
         Dim nextmoment As TimeSpan = TimeSpan.Parse(InputMinutes.Text).Add(thismoment)
@@ -284,5 +290,9 @@ Fin:
         Dim nexttime As String = "GHome-PlugManager " & Chr(10) & "Next Check in " & remaining.ToString
 
         NotifyIcon1.Text = nexttime
+    End Sub
+
+    Private Sub AlwaysOn_CheckedChanged(sender As Object, e As EventArgs) Handles AlwaysOn.CheckedChanged
+        ExecuteButton.PerformClick()
     End Sub
 End Class
