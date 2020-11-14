@@ -148,14 +148,7 @@ Fin:
 
 
     Private Sub PlugManager_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        'Importing the DeviceName
-        'Read the first line (line 1) of the config file
-        Dim ligneacopier As String = System.IO.File.ReadAllLines("c:\GoogleAssistant\config.txt")(1)
-        'isolate the value
-        Dim LineParts() As String = Strings.Split(ligneacopier, "=", 2)
-        Dim Value As String = LineParts(1)
-
-        DeviceName.Text = Value
+        If My.Settings.DeviceName IsNot Nothing Then DeviceName.Text = My.Settings.DeviceName
 
         'Hide the Buttons for security reasons
         TurnOn.Visible = False

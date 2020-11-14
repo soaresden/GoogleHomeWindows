@@ -18,30 +18,18 @@
 
         Dim adressebase As String = (" register-model --manufacturer " & MANU & " --product-name " & PROD & " --type " & TYPO & " --model ")
         TextBox2.Text = adressebase
-
-        'Opening the project custom name
-        'Read the first line (line 0) of the config file
-        Dim ligneacopier As String = System.IO.File.ReadAllLines("c:\GoogleAssistant\config.txt")(0)
-
-        'isolate the value
-        Dim LineParts() As String = Strings.Split(ligneacopier, "=", 2)
-        Dim Value As String = LineParts(1)
-
-        TextBox6.Text = Value
     End Sub
 
     Private Sub TextBox5_TextChanged(sender As Object, e As EventArgs) Handles TextBox5.TextChanged
         'Generating the full command
         TextBox4.Text = TextBox1.Text & " " & Chr(34) & TextBox6.Text & Chr(34) & TextBox2.Text & " " & Chr(34) & TextBox5.Text.ToLower & Chr(34)
 
-        'Editing the config file with the custom device name
-        Dim Chemin As String = ("C:\GoogleAssistant\config.txt")
-        'Setup the lines with info
-        Dim ligne2 As String = ("vdevicename=" & TextBox5.Text)
-        Dim Lines() As String = System.IO.File.ReadAllLines(Chemin)
-        Lines(1) = ligne2
-        System.IO.File.WriteAllLines(Chemin, Lines)
+        My.Settings.DeviceName = TextBox5.Text
+        My.Settings.Save()
     End Sub
 
-
+    Private Sub Win2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If My.Settings.ProjectName IsNot Nothing Then TextBox6.Text = My.Settings.ProjectName
+        If My.Settings.DeviceName IsNot Nothing Then TextBox6.Text = My.Settings.DeviceName
+    End Sub
 End Class

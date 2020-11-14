@@ -5,7 +5,8 @@ Public Class CMDForm
 
     Private Sub CMDForm_Shown(sender As Object, e As EventArgs) Handles Me.Shown
         'Importing Values from config
-        ReadTxt.PerformClick()
+        If My.Settings.ProjectName IsNot Nothing Then GProjectName.Text = My.Settings.ProjectName
+        If My.Settings.DeviceName IsNot Nothing Then GVirtualDeviceName.Text = My.Settings.DeviceName
 
         'Placing Ourselves in Working Folder
         InputTextBox.Text = "cd C:\GoogleAssistant\"
@@ -60,6 +61,10 @@ Public Class CMDForm
 
 
         TextBox1.Text = 0
+
+        'load values
+        If My.Settings.ProjectName IsNot Nothing Then GProjectName.Text = My.Settings.ProjectName
+        If My.Settings.DeviceName IsNot Nothing Then GVirtualDeviceName.Text = My.Settings.DeviceName
 
     End Sub
     Private Sub OverlayMode_Button(sender As Object, e As EventArgs) Handles OverlayMode.Click
@@ -158,30 +163,10 @@ Public Class CMDForm
         End If
     End Sub
 
-    Private Sub ReadTxt_Click(sender As Object, e As EventArgs) Handles ReadTxt.Click
-        Dim Lines() As String = IO.File.ReadAllLines("C:\GoogleAssistant\config.txt")
-        Dim i As Integer
-        i = 1
-        For Each Line As String In Lines
-
-            Dim LineParts() As String = Strings.Split(Line, "=", 2) 'Split the current line into two chunks at the first =
-            Dim Key As String = LineParts(0)
-            Dim ValueConfig As String = LineParts(1)
-
-            If i = 1 Then GProjectName.Text = ValueConfig
-            If i = 2 Then GVirtualDeviceName.Text = ValueConfig
-            i = i + 1
-        Next
-    End Sub
     Private Sub WriteTxt_Click(sender As Object, e As EventArgs) Handles WriteTxt.Click
-        Dim Chemin As String = ("C:\GoogleAssistant\config.txt")
-        'Setup the lines with info
-        Dim ligne1 As String = ("projectname=" & GProjectName.Text)
-        Dim ligne2 As String = ("vdevicename=" & GVirtualDeviceName.Text)
-        Dim Lines() As String = System.IO.File.ReadAllLines(Chemin)
-        Lines(0) = ligne1
-        Lines(1) = ligne2
-        System.IO.File.WriteAllLines(Chemin, Lines)
+        My.Settings.ProjectName = GProjectName.Text
+        My.Settings.DeviceName = GVirtualDeviceName.Text
+        My.Settings.Save()
     End Sub
     Private Sub VoiceOkGoogle_Click(sender As Object, e As EventArgs) Handles VoiceOkGoogle.Click
         'Test if there is no project name and device

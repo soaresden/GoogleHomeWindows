@@ -32,7 +32,6 @@ Partial Class CMDForm
         Me.Label3 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.WriteTxt = New System.Windows.Forms.Button()
-        Me.ReadTxt = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GVirtualDeviceName = New System.Windows.Forms.TextBox()
         Me.VoiceOkGoogle = New System.Windows.Forms.Button()
@@ -119,29 +118,29 @@ Partial Class CMDForm
         '
         Me.OutputTextBox.BackColor = System.Drawing.Color.Black
         Me.OutputTextBox.ForeColor = System.Drawing.Color.White
-        Me.OutputTextBox.Location = New System.Drawing.Point(785, 157)
-        Me.OutputTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.OutputTextBox.Location = New System.Drawing.Point(589, 128)
+        Me.OutputTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.OutputTextBox.Multiline = True
         Me.OutputTextBox.Name = "OutputTextBox"
         Me.OutputTextBox.ReadOnly = True
         Me.OutputTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Both
-        Me.OutputTextBox.Size = New System.Drawing.Size(376, 187)
+        Me.OutputTextBox.Size = New System.Drawing.Size(283, 153)
         Me.OutputTextBox.TabIndex = 0
         '
         'InputTextBox
         '
-        Me.InputTextBox.Location = New System.Drawing.Point(90, 18)
-        Me.InputTextBox.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.InputTextBox.Location = New System.Drawing.Point(68, 15)
+        Me.InputTextBox.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.InputTextBox.Name = "InputTextBox"
-        Me.InputTextBox.Size = New System.Drawing.Size(235, 22)
+        Me.InputTextBox.Size = New System.Drawing.Size(177, 20)
         Me.InputTextBox.TabIndex = 0
         '
         'ExecuteButton
         '
-        Me.ExecuteButton.Location = New System.Drawing.Point(122, 49)
-        Me.ExecuteButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.ExecuteButton.Location = New System.Drawing.Point(92, 40)
+        Me.ExecuteButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ExecuteButton.Name = "ExecuteButton"
-        Me.ExecuteButton.Size = New System.Drawing.Size(64, 48)
+        Me.ExecuteButton.Size = New System.Drawing.Size(48, 39)
         Me.ExecuteButton.TabIndex = 2
         Me.ExecuteButton.Text = "SEND"
         Me.ExecuteButton.UseVisualStyleBackColor = True
@@ -149,27 +148,29 @@ Partial Class CMDForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(12, 7)
+        Me.Label2.Location = New System.Drawing.Point(9, 6)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(155, 17)
+        Me.Label2.Size = New System.Drawing.Size(119, 13)
         Me.Label2.TabIndex = 5
         Me.Label2.Text = "Windows Console Log :"
         '
         'GProjectName
         '
-        Me.GProjectName.Location = New System.Drawing.Point(9, 51)
-        Me.GProjectName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GProjectName.Location = New System.Drawing.Point(7, 41)
+        Me.GProjectName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GProjectName.Name = "GProjectName"
-        Me.GProjectName.Size = New System.Drawing.Size(175, 31)
+        Me.GProjectName.Size = New System.Drawing.Size(132, 25)
         Me.GProjectName.TabIndex = 6
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Roboto", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(5, 26)
+        Me.Label3.Location = New System.Drawing.Point(4, 21)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(181, 23)
+        Me.Label3.Size = New System.Drawing.Size(147, 17)
         Me.Label3.TabIndex = 7
         Me.Label3.Text = "Google Project Name :"
         '
@@ -177,18 +178,17 @@ Partial Class CMDForm
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.MenuHighlight
         Me.GroupBox1.Controls.Add(Me.WriteTxt)
-        Me.GroupBox1.Controls.Add(Me.ReadTxt)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.GVirtualDeviceName)
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.GProjectName)
         Me.GroupBox1.Font = New System.Drawing.Font("Roboto", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 79)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBox1.Location = New System.Drawing.Point(9, 64)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBox1.Size = New System.Drawing.Size(189, 217)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(142, 176)
         Me.GroupBox1.TabIndex = 8
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Your Settings"
@@ -196,51 +196,41 @@ Partial Class CMDForm
         'WriteTxt
         '
         Me.WriteTxt.ForeColor = System.Drawing.Color.Black
-        Me.WriteTxt.Location = New System.Drawing.Point(10, 178)
-        Me.WriteTxt.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.WriteTxt.Location = New System.Drawing.Point(8, 138)
+        Me.WriteTxt.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.WriteTxt.Name = "WriteTxt"
-        Me.WriteTxt.Size = New System.Drawing.Size(176, 29)
+        Me.WriteTxt.Size = New System.Drawing.Size(132, 34)
         Me.WriteTxt.TabIndex = 11
-        Me.WriteTxt.Text = "Write ConfigFile"
+        Me.WriteTxt.Text = "Overwrite Config"
         Me.WriteTxt.UseVisualStyleBackColor = True
-        '
-        'ReadTxt
-        '
-        Me.ReadTxt.ForeColor = System.Drawing.Color.Black
-        Me.ReadTxt.Location = New System.Drawing.Point(9, 144)
-        Me.ReadTxt.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ReadTxt.Name = "ReadTxt"
-        Me.ReadTxt.Size = New System.Drawing.Size(176, 31)
-        Me.ReadTxt.TabIndex = 10
-        Me.ReadTxt.Text = "Read ConfigFile"
-        Me.ReadTxt.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Roboto", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(5, 84)
+        Me.Label1.Location = New System.Drawing.Point(4, 68)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(164, 23)
+        Me.Label1.Size = New System.Drawing.Size(135, 17)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "Virtual Device Name"
         '
         'GVirtualDeviceName
         '
-        Me.GVirtualDeviceName.Location = New System.Drawing.Point(11, 109)
-        Me.GVirtualDeviceName.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GVirtualDeviceName.Location = New System.Drawing.Point(8, 89)
+        Me.GVirtualDeviceName.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GVirtualDeviceName.Name = "GVirtualDeviceName"
-        Me.GVirtualDeviceName.Size = New System.Drawing.Size(175, 31)
+        Me.GVirtualDeviceName.Size = New System.Drawing.Size(132, 25)
         Me.GVirtualDeviceName.TabIndex = 8
         '
         'VoiceOkGoogle
         '
         Me.VoiceOkGoogle.BackColor = System.Drawing.Color.LemonChiffon
         Me.VoiceOkGoogle.Image = CType(resources.GetObject("VoiceOkGoogle.Image"), System.Drawing.Image)
-        Me.VoiceOkGoogle.Location = New System.Drawing.Point(6, 34)
-        Me.VoiceOkGoogle.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.VoiceOkGoogle.Location = New System.Drawing.Point(4, 28)
+        Me.VoiceOkGoogle.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.VoiceOkGoogle.Name = "VoiceOkGoogle"
-        Me.VoiceOkGoogle.Size = New System.Drawing.Size(48, 74)
+        Me.VoiceOkGoogle.Size = New System.Drawing.Size(36, 60)
         Me.VoiceOkGoogle.TabIndex = 12
         Me.VoiceOkGoogle.UseVisualStyleBackColor = False
         '
@@ -249,11 +239,11 @@ Partial Class CMDForm
         Me.GroupBoxVoice.BackColor = System.Drawing.Color.LemonChiffon
         Me.GroupBoxVoice.Controls.Add(Me.RichTextBox2)
         Me.GroupBoxVoice.Controls.Add(Me.VoiceOkGoogle)
-        Me.GroupBoxVoice.Location = New System.Drawing.Point(210, 349)
-        Me.GroupBoxVoice.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBoxVoice.Location = New System.Drawing.Point(158, 284)
+        Me.GroupBoxVoice.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBoxVoice.Name = "GroupBoxVoice"
-        Me.GroupBoxVoice.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBoxVoice.Size = New System.Drawing.Size(569, 116)
+        Me.GroupBoxVoice.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxVoice.Size = New System.Drawing.Size(427, 94)
         Me.GroupBoxVoice.TabIndex = 13
         Me.GroupBoxVoice.TabStop = False
         Me.GroupBoxVoice.Text = "GoogleHome Voice Control"
@@ -262,9 +252,10 @@ Partial Class CMDForm
         '
         Me.RichTextBox2.BackColor = System.Drawing.Color.LemonChiffon
         Me.RichTextBox2.ForeColor = System.Drawing.Color.SaddleBrown
-        Me.RichTextBox2.Location = New System.Drawing.Point(68, 20)
+        Me.RichTextBox2.Location = New System.Drawing.Point(51, 16)
+        Me.RichTextBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.RichTextBox2.Name = "RichTextBox2"
-        Me.RichTextBox2.Size = New System.Drawing.Size(501, 96)
+        Me.RichTextBox2.Size = New System.Drawing.Size(377, 79)
         Me.RichTextBox2.TabIndex = 71
         Me.RichTextBox2.Text = resources.GetString("RichTextBox2.Text")
         '
@@ -275,42 +266,42 @@ Partial Class CMDForm
         Me.GroupBoxInput.Controls.Add(Me.TextBox1)
         Me.GroupBoxInput.Controls.Add(Me.InputTextBox)
         Me.GroupBoxInput.Controls.Add(Me.ExecuteButton)
-        Me.GroupBoxInput.Location = New System.Drawing.Point(785, 349)
-        Me.GroupBoxInput.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.GroupBoxInput.Location = New System.Drawing.Point(589, 284)
+        Me.GroupBoxInput.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBoxInput.Name = "GroupBoxInput"
-        Me.GroupBoxInput.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.GroupBoxInput.Size = New System.Drawing.Size(376, 116)
+        Me.GroupBoxInput.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBoxInput.Size = New System.Drawing.Size(282, 94)
         Me.GroupBoxInput.TabIndex = 14
         Me.GroupBoxInput.TabStop = False
         Me.GroupBoxInput.Text = "GoogleHome Text Control : Confirm with Enter"
         '
         'StopTextButton
         '
-        Me.StopTextButton.Location = New System.Drawing.Point(202, 50)
-        Me.StopTextButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.StopTextButton.Location = New System.Drawing.Point(152, 41)
+        Me.StopTextButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.StopTextButton.Name = "StopTextButton"
-        Me.StopTextButton.Size = New System.Drawing.Size(67, 47)
+        Me.StopTextButton.Size = New System.Drawing.Size(50, 38)
         Me.StopTextButton.TabIndex = 19
         Me.StopTextButton.Text = "STOP"
         Me.StopTextButton.UseVisualStyleBackColor = True
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(20, 18)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextBox1.Location = New System.Drawing.Point(15, 15)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.ReadOnly = True
-        Me.TextBox1.Size = New System.Drawing.Size(64, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(49, 20)
         Me.TextBox1.TabIndex = 17
         Me.TextBox1.Text = "0"
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'TextInit
         '
-        Me.TextInit.Location = New System.Drawing.Point(12, 349)
-        Me.TextInit.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.TextInit.Location = New System.Drawing.Point(9, 284)
+        Me.TextInit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.TextInit.Name = "TextInit"
-        Me.TextInit.Size = New System.Drawing.Size(146, 116)
+        Me.TextInit.Size = New System.Drawing.Size(110, 94)
         Me.TextInit.TabIndex = 18
         Me.TextInit.Text = "1) Please Init Python" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "OR" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Click Google Voice"
         Me.TextInit.UseVisualStyleBackColor = True
@@ -324,19 +315,20 @@ Partial Class CMDForm
         '
         Me.RichTextBox1.BackColor = System.Drawing.Color.DimGray
         Me.RichTextBox1.ForeColor = System.Drawing.Color.White
-        Me.RichTextBox1.Location = New System.Drawing.Point(785, 28)
-        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.RichTextBox1.Location = New System.Drawing.Point(589, 23)
+        Me.RichTextBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.RichTextBox1.Name = "RichTextBox1"
-        Me.RichTextBox1.Size = New System.Drawing.Size(376, 125)
+        Me.RichTextBox1.Size = New System.Drawing.Size(283, 102)
         Me.RichTextBox1.TabIndex = 16
         Me.RichTextBox1.Text = resources.GetString("RichTextBox1.Text")
         '
         'prise2off
         '
         Me.prise2off.Image = CType(resources.GetObject("prise2off.Image"), System.Drawing.Image)
-        Me.prise2off.Location = New System.Drawing.Point(463, 235)
+        Me.prise2off.Location = New System.Drawing.Point(347, 191)
+        Me.prise2off.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.prise2off.Name = "prise2off"
-        Me.prise2off.Size = New System.Drawing.Size(44, 38)
+        Me.prise2off.Size = New System.Drawing.Size(33, 31)
         Me.prise2off.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.prise2off.TabIndex = 66
         Me.prise2off.TabStop = False
@@ -344,9 +336,10 @@ Partial Class CMDForm
         'prise2on
         '
         Me.prise2on.Image = CType(resources.GetObject("prise2on.Image"), System.Drawing.Image)
-        Me.prise2on.Location = New System.Drawing.Point(519, 235)
+        Me.prise2on.Location = New System.Drawing.Point(389, 191)
+        Me.prise2on.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.prise2on.Name = "prise2on"
-        Me.prise2on.Size = New System.Drawing.Size(44, 38)
+        Me.prise2on.Size = New System.Drawing.Size(33, 31)
         Me.prise2on.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.prise2on.TabIndex = 65
         Me.prise2on.TabStop = False
@@ -354,9 +347,10 @@ Partial Class CMDForm
         'prise1off
         '
         Me.prise1off.Image = CType(resources.GetObject("prise1off.Image"), System.Drawing.Image)
-        Me.prise1off.Location = New System.Drawing.Point(463, 159)
+        Me.prise1off.Location = New System.Drawing.Point(347, 129)
+        Me.prise1off.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.prise1off.Name = "prise1off"
-        Me.prise1off.Size = New System.Drawing.Size(44, 38)
+        Me.prise1off.Size = New System.Drawing.Size(33, 31)
         Me.prise1off.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.prise1off.TabIndex = 64
         Me.prise1off.TabStop = False
@@ -364,9 +358,10 @@ Partial Class CMDForm
         'prise1on
         '
         Me.prise1on.Image = CType(resources.GetObject("prise1on.Image"), System.Drawing.Image)
-        Me.prise1on.Location = New System.Drawing.Point(519, 159)
+        Me.prise1on.Location = New System.Drawing.Point(389, 129)
+        Me.prise1on.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.prise1on.Name = "prise1on"
-        Me.prise1on.Size = New System.Drawing.Size(44, 38)
+        Me.prise1on.Size = New System.Drawing.Size(33, 31)
         Me.prise1on.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.prise1on.TabIndex = 63
         Me.prise1on.TabStop = False
@@ -374,9 +369,10 @@ Partial Class CMDForm
         'aspirateur1off
         '
         Me.aspirateur1off.Image = CType(resources.GetObject("aspirateur1off.Image"), System.Drawing.Image)
-        Me.aspirateur1off.Location = New System.Drawing.Point(350, 159)
+        Me.aspirateur1off.Location = New System.Drawing.Point(262, 129)
+        Me.aspirateur1off.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.aspirateur1off.Name = "aspirateur1off"
-        Me.aspirateur1off.Size = New System.Drawing.Size(44, 38)
+        Me.aspirateur1off.Size = New System.Drawing.Size(33, 31)
         Me.aspirateur1off.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.aspirateur1off.TabIndex = 62
         Me.aspirateur1off.TabStop = False
@@ -384,9 +380,10 @@ Partial Class CMDForm
         'aspirateur1on
         '
         Me.aspirateur1on.Image = CType(resources.GetObject("aspirateur1on.Image"), System.Drawing.Image)
-        Me.aspirateur1on.Location = New System.Drawing.Point(406, 159)
+        Me.aspirateur1on.Location = New System.Drawing.Point(304, 129)
+        Me.aspirateur1on.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.aspirateur1on.Name = "aspirateur1on"
-        Me.aspirateur1on.Size = New System.Drawing.Size(44, 38)
+        Me.aspirateur1on.Size = New System.Drawing.Size(33, 31)
         Me.aspirateur1on.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.aspirateur1on.TabIndex = 61
         Me.aspirateur1on.TabStop = False
@@ -394,9 +391,10 @@ Partial Class CMDForm
         'camera1off
         '
         Me.camera1off.Image = CType(resources.GetObject("camera1off.Image"), System.Drawing.Image)
-        Me.camera1off.Location = New System.Drawing.Point(238, 159)
+        Me.camera1off.Location = New System.Drawing.Point(178, 129)
+        Me.camera1off.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.camera1off.Name = "camera1off"
-        Me.camera1off.Size = New System.Drawing.Size(44, 38)
+        Me.camera1off.Size = New System.Drawing.Size(33, 31)
         Me.camera1off.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.camera1off.TabIndex = 60
         Me.camera1off.TabStop = False
@@ -404,9 +402,10 @@ Partial Class CMDForm
         'camera1on
         '
         Me.camera1on.Image = CType(resources.GetObject("camera1on.Image"), System.Drawing.Image)
-        Me.camera1on.Location = New System.Drawing.Point(294, 159)
+        Me.camera1on.Location = New System.Drawing.Point(220, 129)
+        Me.camera1on.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.camera1on.Name = "camera1on"
-        Me.camera1on.Size = New System.Drawing.Size(44, 38)
+        Me.camera1on.Size = New System.Drawing.Size(33, 31)
         Me.camera1on.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.camera1on.TabIndex = 59
         Me.camera1on.TabStop = False
@@ -414,9 +413,10 @@ Partial Class CMDForm
         'chromecast1off
         '
         Me.chromecast1off.Image = CType(resources.GetObject("chromecast1off.Image"), System.Drawing.Image)
-        Me.chromecast1off.Location = New System.Drawing.Point(119, 159)
+        Me.chromecast1off.Location = New System.Drawing.Point(89, 129)
+        Me.chromecast1off.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.chromecast1off.Name = "chromecast1off"
-        Me.chromecast1off.Size = New System.Drawing.Size(44, 38)
+        Me.chromecast1off.Size = New System.Drawing.Size(33, 31)
         Me.chromecast1off.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.chromecast1off.TabIndex = 58
         Me.chromecast1off.TabStop = False
@@ -424,9 +424,10 @@ Partial Class CMDForm
         'chromecast1on
         '
         Me.chromecast1on.Image = CType(resources.GetObject("chromecast1on.Image"), System.Drawing.Image)
-        Me.chromecast1on.Location = New System.Drawing.Point(175, 159)
+        Me.chromecast1on.Location = New System.Drawing.Point(131, 129)
+        Me.chromecast1on.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.chromecast1on.Name = "chromecast1on"
-        Me.chromecast1on.Size = New System.Drawing.Size(44, 38)
+        Me.chromecast1on.Size = New System.Drawing.Size(33, 31)
         Me.chromecast1on.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.chromecast1on.TabIndex = 57
         Me.chromecast1on.TabStop = False
@@ -434,9 +435,10 @@ Partial Class CMDForm
         'lamp1off
         '
         Me.lamp1off.Image = CType(resources.GetObject("lamp1off.Image"), System.Drawing.Image)
-        Me.lamp1off.Location = New System.Drawing.Point(7, 159)
+        Me.lamp1off.Location = New System.Drawing.Point(5, 129)
+        Me.lamp1off.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.lamp1off.Name = "lamp1off"
-        Me.lamp1off.Size = New System.Drawing.Size(44, 38)
+        Me.lamp1off.Size = New System.Drawing.Size(33, 31)
         Me.lamp1off.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.lamp1off.TabIndex = 56
         Me.lamp1off.TabStop = False
@@ -444,67 +446,75 @@ Partial Class CMDForm
         'lamp1on
         '
         Me.lamp1on.Image = CType(resources.GetObject("lamp1on.Image"), System.Drawing.Image)
-        Me.lamp1on.Location = New System.Drawing.Point(58, 159)
+        Me.lamp1on.Location = New System.Drawing.Point(44, 129)
+        Me.lamp1on.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.lamp1on.Name = "lamp1on"
-        Me.lamp1on.Size = New System.Drawing.Size(44, 38)
+        Me.lamp1on.Size = New System.Drawing.Size(33, 31)
         Me.lamp1on.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.lamp1on.TabIndex = 55
         Me.lamp1on.TabStop = False
         '
         'prise2
         '
-        Me.prise2.Location = New System.Drawing.Point(463, 207)
+        Me.prise2.Location = New System.Drawing.Point(347, 168)
+        Me.prise2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.prise2.Name = "prise2"
-        Me.prise2.Size = New System.Drawing.Size(100, 22)
+        Me.prise2.Size = New System.Drawing.Size(76, 20)
         Me.prise2.TabIndex = 54
         Me.prise2.Text = "Prise PC"
         '
         'prise1
         '
-        Me.prise1.Location = New System.Drawing.Point(463, 131)
+        Me.prise1.Location = New System.Drawing.Point(347, 106)
+        Me.prise1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.prise1.Name = "prise1"
-        Me.prise1.Size = New System.Drawing.Size(100, 22)
+        Me.prise1.Size = New System.Drawing.Size(76, 20)
         Me.prise1.TabIndex = 53
         Me.prise1.Text = "Prise TV"
         '
         'aspirateur1
         '
-        Me.aspirateur1.Location = New System.Drawing.Point(350, 131)
+        Me.aspirateur1.Location = New System.Drawing.Point(262, 106)
+        Me.aspirateur1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.aspirateur1.Name = "aspirateur1"
-        Me.aspirateur1.Size = New System.Drawing.Size(100, 22)
+        Me.aspirateur1.Size = New System.Drawing.Size(76, 20)
         Me.aspirateur1.TabIndex = 52
         Me.aspirateur1.Text = "Aspirateur"
         '
         'camera1
         '
-        Me.camera1.Location = New System.Drawing.Point(238, 131)
+        Me.camera1.Location = New System.Drawing.Point(178, 106)
+        Me.camera1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.camera1.Name = "camera1"
-        Me.camera1.Size = New System.Drawing.Size(100, 22)
+        Me.camera1.Size = New System.Drawing.Size(76, 20)
         Me.camera1.TabIndex = 51
         Me.camera1.Text = "Camera"
         '
         'chromecast1
         '
-        Me.chromecast1.Location = New System.Drawing.Point(119, 131)
+        Me.chromecast1.Location = New System.Drawing.Point(89, 106)
+        Me.chromecast1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.chromecast1.Name = "chromecast1"
-        Me.chromecast1.Size = New System.Drawing.Size(100, 22)
+        Me.chromecast1.Size = New System.Drawing.Size(76, 20)
         Me.chromecast1.TabIndex = 50
         Me.chromecast1.Text = "ChromeCast"
         '
         'lamp1
         '
-        Me.lamp1.Location = New System.Drawing.Point(2, 131)
+        Me.lamp1.Location = New System.Drawing.Point(2, 106)
+        Me.lamp1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.lamp1.Name = "lamp1"
-        Me.lamp1.Size = New System.Drawing.Size(100, 22)
+        Me.lamp1.Size = New System.Drawing.Size(76, 20)
         Me.lamp1.TabIndex = 49
         Me.lamp1.Text = "Lampe Chambre"
         '
         'PictureBox7
         '
         Me.PictureBox7.Image = CType(resources.GetObject("PictureBox7.Image"), System.Drawing.Image)
-        Me.PictureBox7.Location = New System.Drawing.Point(350, 21)
+        Me.PictureBox7.Location = New System.Drawing.Point(262, 17)
+        Me.PictureBox7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox7.Name = "PictureBox7"
-        Me.PictureBox7.Size = New System.Drawing.Size(100, 104)
+        Me.PictureBox7.Size = New System.Drawing.Size(75, 84)
         Me.PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox7.TabIndex = 48
         Me.PictureBox7.TabStop = False
@@ -512,9 +522,10 @@ Partial Class CMDForm
         'PictureBox6
         '
         Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(463, 21)
+        Me.PictureBox6.Location = New System.Drawing.Point(347, 17)
+        Me.PictureBox6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(100, 104)
+        Me.PictureBox6.Size = New System.Drawing.Size(75, 84)
         Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox6.TabIndex = 47
         Me.PictureBox6.TabStop = False
@@ -522,9 +533,10 @@ Partial Class CMDForm
         'PictureBox4
         '
         Me.PictureBox4.Image = CType(resources.GetObject("PictureBox4.Image"), System.Drawing.Image)
-        Me.PictureBox4.Location = New System.Drawing.Point(238, 21)
+        Me.PictureBox4.Location = New System.Drawing.Point(178, 17)
+        Me.PictureBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(100, 104)
+        Me.PictureBox4.Size = New System.Drawing.Size(75, 84)
         Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox4.TabIndex = 46
         Me.PictureBox4.TabStop = False
@@ -532,9 +544,10 @@ Partial Class CMDForm
         'PictureBox3
         '
         Me.PictureBox3.Image = CType(resources.GetObject("PictureBox3.Image"), System.Drawing.Image)
-        Me.PictureBox3.Location = New System.Drawing.Point(119, 21)
+        Me.PictureBox3.Location = New System.Drawing.Point(89, 17)
+        Me.PictureBox3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(100, 104)
+        Me.PictureBox3.Size = New System.Drawing.Size(75, 84)
         Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox3.TabIndex = 45
         Me.PictureBox3.TabStop = False
@@ -542,9 +555,10 @@ Partial Class CMDForm
         'PictureBox2
         '
         Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(7, 21)
+        Me.PictureBox2.Location = New System.Drawing.Point(5, 17)
+        Me.PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(95, 104)
+        Me.PictureBox2.Size = New System.Drawing.Size(71, 84)
         Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox2.TabIndex = 44
         Me.PictureBox2.TabStop = False
@@ -588,18 +602,21 @@ Partial Class CMDForm
         Me.GroupBox4.Controls.Add(Me.lamp1off)
         Me.GroupBox4.Controls.Add(Me.prise2)
         Me.GroupBox4.Controls.Add(Me.lamp1on)
-        Me.GroupBox4.Location = New System.Drawing.Point(210, 22)
+        Me.GroupBox4.Location = New System.Drawing.Point(158, 18)
+        Me.GroupBox4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(569, 322)
+        Me.GroupBox4.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox4.Size = New System.Drawing.Size(427, 262)
         Me.GroupBox4.TabIndex = 67
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Input Some Devices To Quickly Turn On/Off (Icons are just visuals)"
         '
         'CleanDevices
         '
-        Me.CleanDevices.Location = New System.Drawing.Point(226, 283)
+        Me.CleanDevices.Location = New System.Drawing.Point(170, 230)
+        Me.CleanDevices.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.CleanDevices.Name = "CleanDevices"
-        Me.CleanDevices.Size = New System.Drawing.Size(129, 33)
+        Me.CleanDevices.Size = New System.Drawing.Size(97, 27)
         Me.CleanDevices.TabIndex = 79
         Me.CleanDevices.Text = "Clean Devices"
         Me.CleanDevices.UseVisualStyleBackColor = True
@@ -607,9 +624,10 @@ Partial Class CMDForm
         'aspirateur2off
         '
         Me.aspirateur2off.Image = CType(resources.GetObject("aspirateur2off.Image"), System.Drawing.Image)
-        Me.aspirateur2off.Location = New System.Drawing.Point(350, 235)
+        Me.aspirateur2off.Location = New System.Drawing.Point(262, 191)
+        Me.aspirateur2off.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.aspirateur2off.Name = "aspirateur2off"
-        Me.aspirateur2off.Size = New System.Drawing.Size(44, 38)
+        Me.aspirateur2off.Size = New System.Drawing.Size(33, 31)
         Me.aspirateur2off.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.aspirateur2off.TabIndex = 78
         Me.aspirateur2off.TabStop = False
@@ -617,26 +635,29 @@ Partial Class CMDForm
         'aspirateur2on
         '
         Me.aspirateur2on.Image = CType(resources.GetObject("aspirateur2on.Image"), System.Drawing.Image)
-        Me.aspirateur2on.Location = New System.Drawing.Point(406, 235)
+        Me.aspirateur2on.Location = New System.Drawing.Point(304, 191)
+        Me.aspirateur2on.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.aspirateur2on.Name = "aspirateur2on"
-        Me.aspirateur2on.Size = New System.Drawing.Size(44, 38)
+        Me.aspirateur2on.Size = New System.Drawing.Size(33, 31)
         Me.aspirateur2on.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.aspirateur2on.TabIndex = 77
         Me.aspirateur2on.TabStop = False
         '
         'aspirateur2
         '
-        Me.aspirateur2.Location = New System.Drawing.Point(350, 207)
+        Me.aspirateur2.Location = New System.Drawing.Point(262, 168)
+        Me.aspirateur2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.aspirateur2.Name = "aspirateur2"
-        Me.aspirateur2.Size = New System.Drawing.Size(100, 22)
+        Me.aspirateur2.Size = New System.Drawing.Size(76, 20)
         Me.aspirateur2.TabIndex = 76
         '
         'camera2off
         '
         Me.camera2off.Image = CType(resources.GetObject("camera2off.Image"), System.Drawing.Image)
-        Me.camera2off.Location = New System.Drawing.Point(238, 235)
+        Me.camera2off.Location = New System.Drawing.Point(178, 191)
+        Me.camera2off.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.camera2off.Name = "camera2off"
-        Me.camera2off.Size = New System.Drawing.Size(44, 38)
+        Me.camera2off.Size = New System.Drawing.Size(33, 31)
         Me.camera2off.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.camera2off.TabIndex = 75
         Me.camera2off.TabStop = False
@@ -644,26 +665,29 @@ Partial Class CMDForm
         'camera2on
         '
         Me.camera2on.Image = CType(resources.GetObject("camera2on.Image"), System.Drawing.Image)
-        Me.camera2on.Location = New System.Drawing.Point(294, 235)
+        Me.camera2on.Location = New System.Drawing.Point(220, 191)
+        Me.camera2on.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.camera2on.Name = "camera2on"
-        Me.camera2on.Size = New System.Drawing.Size(44, 38)
+        Me.camera2on.Size = New System.Drawing.Size(33, 31)
         Me.camera2on.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.camera2on.TabIndex = 74
         Me.camera2on.TabStop = False
         '
         'camera2
         '
-        Me.camera2.Location = New System.Drawing.Point(238, 207)
+        Me.camera2.Location = New System.Drawing.Point(178, 168)
+        Me.camera2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.camera2.Name = "camera2"
-        Me.camera2.Size = New System.Drawing.Size(100, 22)
+        Me.camera2.Size = New System.Drawing.Size(76, 20)
         Me.camera2.TabIndex = 73
         '
         'chromecast2off
         '
         Me.chromecast2off.Image = CType(resources.GetObject("chromecast2off.Image"), System.Drawing.Image)
-        Me.chromecast2off.Location = New System.Drawing.Point(119, 235)
+        Me.chromecast2off.Location = New System.Drawing.Point(89, 191)
+        Me.chromecast2off.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.chromecast2off.Name = "chromecast2off"
-        Me.chromecast2off.Size = New System.Drawing.Size(44, 38)
+        Me.chromecast2off.Size = New System.Drawing.Size(33, 31)
         Me.chromecast2off.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.chromecast2off.TabIndex = 72
         Me.chromecast2off.TabStop = False
@@ -671,33 +695,37 @@ Partial Class CMDForm
         'chromecast2on
         '
         Me.chromecast2on.Image = CType(resources.GetObject("chromecast2on.Image"), System.Drawing.Image)
-        Me.chromecast2on.Location = New System.Drawing.Point(175, 235)
+        Me.chromecast2on.Location = New System.Drawing.Point(131, 191)
+        Me.chromecast2on.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.chromecast2on.Name = "chromecast2on"
-        Me.chromecast2on.Size = New System.Drawing.Size(44, 38)
+        Me.chromecast2on.Size = New System.Drawing.Size(33, 31)
         Me.chromecast2on.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.chromecast2on.TabIndex = 71
         Me.chromecast2on.TabStop = False
         '
         'chromecast2
         '
-        Me.chromecast2.Location = New System.Drawing.Point(119, 207)
+        Me.chromecast2.Location = New System.Drawing.Point(89, 168)
+        Me.chromecast2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.chromecast2.Name = "chromecast2"
-        Me.chromecast2.Size = New System.Drawing.Size(100, 22)
+        Me.chromecast2.Size = New System.Drawing.Size(76, 20)
         Me.chromecast2.TabIndex = 70
         '
         'lamp2
         '
-        Me.lamp2.Location = New System.Drawing.Point(2, 207)
+        Me.lamp2.Location = New System.Drawing.Point(2, 168)
+        Me.lamp2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.lamp2.Name = "lamp2"
-        Me.lamp2.Size = New System.Drawing.Size(100, 22)
+        Me.lamp2.Size = New System.Drawing.Size(76, 20)
         Me.lamp2.TabIndex = 67
         '
         'lamp2off
         '
         Me.lamp2off.Image = CType(resources.GetObject("lamp2off.Image"), System.Drawing.Image)
-        Me.lamp2off.Location = New System.Drawing.Point(7, 235)
+        Me.lamp2off.Location = New System.Drawing.Point(5, 191)
+        Me.lamp2off.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.lamp2off.Name = "lamp2off"
-        Me.lamp2off.Size = New System.Drawing.Size(44, 38)
+        Me.lamp2off.Size = New System.Drawing.Size(33, 31)
         Me.lamp2off.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.lamp2off.TabIndex = 69
         Me.lamp2off.TabStop = False
@@ -705,45 +733,49 @@ Partial Class CMDForm
         'lamp2on
         '
         Me.lamp2on.Image = CType(resources.GetObject("lamp2on.Image"), System.Drawing.Image)
-        Me.lamp2on.Location = New System.Drawing.Point(58, 235)
+        Me.lamp2on.Location = New System.Drawing.Point(44, 191)
+        Me.lamp2on.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.lamp2on.Name = "lamp2on"
-        Me.lamp2on.Size = New System.Drawing.Size(44, 38)
+        Me.lamp2on.Size = New System.Drawing.Size(33, 31)
         Me.lamp2on.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.lamp2on.TabIndex = 68
         Me.lamp2on.TabStop = False
         '
         'OverlayMode
         '
-        Me.OverlayMode.Location = New System.Drawing.Point(12, 28)
+        Me.OverlayMode.Location = New System.Drawing.Point(9, 23)
+        Me.OverlayMode.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.OverlayMode.Name = "OverlayMode"
-        Me.OverlayMode.Size = New System.Drawing.Size(84, 46)
+        Me.OverlayMode.Size = New System.Drawing.Size(63, 37)
         Me.OverlayMode.TabIndex = 68
         Me.OverlayMode.Text = "Overlay" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Mode"
         Me.OverlayMode.UseVisualStyleBackColor = True
         '
         'NormalMode
         '
-        Me.NormalMode.Location = New System.Drawing.Point(118, 28)
+        Me.NormalMode.Location = New System.Drawing.Point(88, 23)
+        Me.NormalMode.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.NormalMode.Name = "NormalMode"
-        Me.NormalMode.Size = New System.Drawing.Size(83, 46)
+        Me.NormalMode.Size = New System.Drawing.Size(62, 37)
         Me.NormalMode.TabIndex = 69
         Me.NormalMode.Text = "Normal Mode"
         Me.NormalMode.UseVisualStyleBackColor = True
         '
         'Mode
         '
-        Me.Mode.Location = New System.Drawing.Point(212, 0)
+        Me.Mode.Location = New System.Drawing.Point(159, 0)
+        Me.Mode.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Mode.Name = "Mode"
-        Me.Mode.Size = New System.Drawing.Size(95, 22)
+        Me.Mode.Size = New System.Drawing.Size(72, 20)
         Me.Mode.TabIndex = 70
         Me.Mode.Text = "Normal"
         '
         'CMDForm
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(1158, 469)
+        Me.ClientSize = New System.Drawing.Size(868, 381)
         Me.Controls.Add(Me.Mode)
         Me.Controls.Add(Me.NormalMode)
         Me.Controls.Add(Me.OverlayMode)
@@ -755,9 +787,9 @@ Partial Class CMDForm
         Me.Controls.Add(Me.OutputTextBox)
         Me.Controls.Add(Me.GroupBoxInput)
         Me.Controls.Add(Me.GroupBox4)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.MaximumSize = New System.Drawing.Size(1200, 540)
-        Me.MinimumSize = New System.Drawing.Size(800, 402)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.MaximumSize = New System.Drawing.Size(904, 446)
+        Me.MinimumSize = New System.Drawing.Size(604, 334)
         Me.Name = "CMDForm"
         Me.Text = "CMDForm"
         Me.GroupBox1.ResumeLayout(False)
@@ -809,7 +841,6 @@ Partial Class CMDForm
     Friend WithEvents VoiceOkGoogle As Button
     Friend WithEvents GroupBoxVoice As GroupBox
     Friend WithEvents GroupBoxInput As GroupBox
-    Friend WithEvents ReadTxt As Button
     Friend WithEvents NotifyIcon1 As NotifyIcon
     Friend WithEvents WriteTxt As Button
     Friend WithEvents RichTextBox1 As RichTextBox

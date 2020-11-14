@@ -11,7 +11,7 @@
         Process.Start("https://console.developers.google.com/apis/api/embeddedassistant.googleapis.com/overview")
     End Sub
 
-    Private Sub RichTextBox5_TextChanged(sender As Object, e As EventArgs) Handles RichTextBox5.TextChanged
-
+    Private Sub GHome2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If My.Settings.ProjectName IsNot Nothing Then RichTextBox5.Text = My.Settings.ProjectName
     End Sub
 End Class
