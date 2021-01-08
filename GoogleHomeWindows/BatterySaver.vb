@@ -212,7 +212,7 @@ Fin:
         InitPython.Text = Val(InitPython.Text) + 1
 
         'Initialize Python
-        Dim basecommand As String = ("python -m googlesamples.assistant.grpc.textinput --device-model-id DEVICENAME --device-id DEVICENAME")
+        Dim basecommand As String = ("py -m googlesamples.assistant.grpc.textinput --device-model-id DEVICENAME --device-id DEVICENAME")
         Dim fullcommand As String = Replace(basecommand, "DEVICENAME", DeviceName.Text)
         InputTextBox.Text = fullcommand
         MyProcess.StandardInput.WriteLine(InputTextBox.Text)
